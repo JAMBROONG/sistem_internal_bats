@@ -1,6 +1,6 @@
 saya memiliki data excel berupa pendapatan penjualan rumah sakit, dimana data tersebut meliputi:
 Nomor Rekam Medis |	Nomor Transaksi	| TANGGAL |	PASIEN |	UNIT	| FAKTUR	| PRODUK	| Kelas TARIF |	OBAT |	QTY	| TARIP |	JUMLAH	| DOKTER	| PENJAMIN |	INVOICE	| BAYAR
 
-sedikit penjelasan dimana penjamin memiliki 3 jenis yakni umum, bpjs dan asuransi. 
+sedikit penjelasan dimana penjamin memiliki 3 jenis yakni umum, bpjs dan asuransi. dan untuk jenis layanannya ada 2 yakni untuk rawat jalan dan rawat inap
 
-tujuan saya adalah, saya ingin membuat dashboard yang menampilkan data yang sudah dianalisa mengenai dokter. kira-kira poin apa saja yang bisa saya tampilkan di dalam dashboard? dan tolong berikan saya saran chart apa yang digunakan.
+tujuan saya adalah, saya ingin membuat dashboard yang menampilkan data yang sudah dianalisa mengenai penyakit. kira-kira poin apa saja yang bisa saya tampilkan di dalam dashboard? dan tolong berikan saya saran chart apa yang digunakan.

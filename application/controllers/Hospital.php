@@ -56,7 +56,7 @@ class Hospital extends CI_Controller
         $this->load->model('M_user');
         $id = $this->session->userdata('id');
         $data['user'] = $this->M_user->profile($id);
-        $this->load->view('hospital/yearly/v_disease', $data);
+        $this->load->view('hospital/yearly/v_penyakit', $data);
     } 
 
     public function yearly_unit()
