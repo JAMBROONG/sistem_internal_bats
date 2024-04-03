@@ -9,7 +9,8 @@
     headingColor,
     labelColor,
     borderColor,
-    legendColor;
+    legendColor,
+    heightChart;
 
   if (isDarkStyle) {
     cardColor = config.colors_dark.cardColor;
@@ -24,6 +25,8 @@
     legendColor = config.colors.bodyColor;
     borderColor = config.colors.borderColor;
   }
+
+  heightChart = '100%';
 
   // Color constant
   const chartColors = {
@@ -49,7 +52,7 @@
 
     chart: {
       type: 'bar',
-      height: 300,
+      // height: heightChart,
       toolbar: {
         show: false
       }
@@ -69,13 +72,15 @@
     },
     plotOptions: {
       bar: {
-        horizontal: false,
+        horizontal: true,
         columnWidth: '55%',
+        // barHeight: '100%',
+        // distribute: true,
         endingShape: 'rounded',
         startingShape: 'rounded',
         borderRadius: 4,
         dataLabels: {
-          position: 'top', // top, center, bottom
+          position: 'bottom', // top, center, bottom
         }
       }
     },
@@ -93,7 +98,7 @@
       formatter: function (val) {
         return val;
       },
-      offsetY: -20,
+      offsetX: -20,
       style: {
         fontSize: '12px',
         colors: [legendColor]
@@ -104,13 +109,16 @@
       {
         breakpoint: 480,
         options: {
+          yaxis: {
+            reversed: false,
+          },
           chart: {
             height: 250
           },
 
           plotOptions: {
             bar: {
-              horizontal: false,
+              // horizontal: true,
               columnWidth: '80%',
               endingShape: 'rounded',
               startingShape: 'rounded',
@@ -190,14 +198,15 @@
       }
     },
     yaxis: {
+      reversed: true,
       axisBorder: {
         show: false
       },
       labels: {
-        show: false,
+        show: true,
         style: {
           colors: labelColor,
-          fontSize: '13px'
+          fontSize: '10px'
         }
       },
       title: {
@@ -223,7 +232,7 @@
   var fd2 = {
     chart: {
       type: 'bar',
-      height: 300,
+      // height: 350,
       toolbar: {
         show: false
       }
@@ -243,13 +252,13 @@
     },
     plotOptions: {
       bar: {
-        horizontal: false,
+        horizontal: true,
         columnWidth: '55%',
         endingShape: 'rounded',
         startingShape: 'rounded',
         borderRadius: 4,
         dataLabels: {
-          position: 'top', // top, center, bottom
+          position: 'bottom', // top, center, bottom
         }
       }
     },
@@ -267,7 +276,7 @@
       formatter: function (val) {
         return val;
       },
-      offsetY: -20,
+      offsetX: -20,
       style: {
         fontSize: '12px',
         colors: [legendColor]
@@ -278,13 +287,16 @@
       {
         breakpoint: 480,
         options: {
+          yaxis: {
+            reversed: false,
+          },
           chart: {
             height: 250
           },
 
           plotOptions: {
             bar: {
-              horizontal: false,
+              // horizontal: true,
               columnWidth: '80%',
               endingShape: 'rounded',
               startingShape: 'rounded',
@@ -364,14 +376,15 @@
       }
     },
     yaxis: {
+      reversed: true,
       axisBorder: {
         show: false
       },
       labels: {
-        show: false,
+        show: true,
         style: {
           colors: labelColor,
-          fontSize: '13px'
+          fontSize: '10px'
         }
       },
       title: {
@@ -395,10 +408,9 @@
   chart.render();
 
   var fd3 = {
-
     chart: {
       type: 'bar',
-      height: 300,
+      // height: 350,
       toolbar: {
         show: false
       }
@@ -418,13 +430,13 @@
     },
     plotOptions: {
       bar: {
-        horizontal: false,
+        horizontal: true,
         columnWidth: '55%',
         endingShape: 'rounded',
         startingShape: 'rounded',
         borderRadius: 4,
         dataLabels: {
-          position: 'top', // top, center, bottom
+          position: 'bottom', // top, center, bottom
         }
       }
     },
@@ -442,7 +454,7 @@
       formatter: function (val) {
         return val;
       },
-      offsetY: -20,
+      offsetX: -20,
       style: {
         fontSize: '12px',
         colors: [legendColor]
@@ -453,13 +465,16 @@
       {
         breakpoint: 480,
         options: {
+          yaxis: {
+            reversed: false,
+          },
           chart: {
             height: 250
           },
 
           plotOptions: {
             bar: {
-              horizontal: false,
+              // horizontal: true,
               columnWidth: '80%',
               endingShape: 'rounded',
               startingShape: 'rounded',
@@ -539,14 +554,15 @@
       }
     },
     yaxis: {
+      reversed: true,
       axisBorder: {
         show: false
       },
       labels: {
-        show: false,
+        show: true,
         style: {
           colors: labelColor,
-          fontSize: '13px'
+          fontSize: '10px'
         }
       },
       title: {
@@ -572,7 +588,6 @@
 
     chart: {
       type: 'bar',
-      height: 300,
       toolbar: {
         show: false
       }
@@ -592,7 +607,7 @@
     },
     plotOptions: {
       bar: {
-        horizontal: false,
+        horizontal: true,
         columnWidth: '55%',
         endingShape: 'rounded',
         startingShape: 'rounded',
@@ -616,7 +631,7 @@
       formatter: function (val) {
         return val + 'M';
       },
-      offsetY: -20,
+      offsetX: 23,
       style: {
         fontSize: '12px',
         colors: [legendColor]
@@ -633,7 +648,6 @@
 
           plotOptions: {
             bar: {
-              horizontal: false,
               columnWidth: '80%',
               endingShape: 'rounded',
               startingShape: 'rounded',
@@ -741,6 +755,625 @@
   };
 
   var chart = new ApexCharts(document.querySelector("#fd4"), fd4);
+  chart.render();
+
+  var fd15 = {
+
+    chart: {
+      type: 'bar',
+      height: 300,
+      toolbar: {
+        show: false
+      }
+    },
+  
+    grid: {
+      xaxis: {
+        lines: {
+          show: false
+        }
+      },
+      yaxis: {
+        lines: {
+          show: false
+        }
+      }
+    },
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        columnWidth: '55%',
+        endingShape: 'rounded',
+        startingShape: 'rounded',
+        borderRadius: 4,
+        dataLabels: {
+          position: 'top', // top, center, bottom
+        }
+      }
+    },
+    legend: {
+      show: true,
+      position: 'top',
+      horizontalAlign: 'start',
+      labels: {
+        colors: legendColor,
+        useSeriesColors: false
+      }
+    },
+    dataLabels: {
+      enabled: true,
+      formatter: function (val) {
+        return val + 'M';
+      },
+      offsetY: -20,
+      style: {
+        fontSize: '12px',
+        colors: [legendColor]
+      }
+    },
+    colors: [config.colors.primary],
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            height: 250
+          },
+  
+          plotOptions: {
+            bar: {
+              horizontal: false,
+              columnWidth: '80%',
+              endingShape: 'rounded',
+              startingShape: 'rounded',
+              borderRadius: 4
+            }
+          },
+  
+          dataLabels: {
+            enabled: false
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: 'Pasien',
+        data: [
+          70,
+          65,
+          60,
+          55,
+          30,
+          25,
+          25
+        ]
+      }
+    ],
+    xaxis: {
+      categories: [
+        '2018',
+        '2019',
+        '2020',
+        '2021',
+        '2022',
+        '2023',
+        '2024'
+      ],
+      axisBorder: {
+        show: false,
+        color: borderColor
+      },
+      axisTicks: {
+        show: false
+      },
+      labels: {
+        style: {
+          colors: legendColor,
+          fontSize: '13px',
+          fontFamily: 'Public Sans'
+        }
+      }
+    },
+    yaxis: {
+      axisBorder: {
+        show: false
+      },
+      labels: {
+        show: false,
+        style: {
+          colors: labelColor,
+          fontSize: '13px'
+        }
+      },
+      title: {
+        show: false
+      }
+    },
+    fill: {
+      opacity: 1
+    },
+  
+    tooltip: {
+      y: {
+        formatter: function (val) {
+          return val
+        }
+      }
+    }
+  };
+  
+  var chart = new ApexCharts(document.querySelector("#fd15"), fd15);
+  chart.render();
+
+  var fd16 = {
+
+    chart: {
+      type: 'bar',
+      height: 300,
+      toolbar: {
+        show: false
+      }
+    },
+  
+    grid: {
+      xaxis: {
+        lines: {
+          show: false
+        }
+      },
+      yaxis: {
+        lines: {
+          show: false
+        }
+      }
+    },
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        columnWidth: '55%',
+        endingShape: 'rounded',
+        startingShape: 'rounded',
+        borderRadius: 4,
+        dataLabels: {
+          position: 'top', // top, center, bottom
+        }
+      }
+    },
+    legend: {
+      show: true,
+      position: 'top',
+      horizontalAlign: 'start',
+      labels: {
+        colors: legendColor,
+        useSeriesColors: false
+      }
+    },
+    dataLabels: {
+      enabled: true,
+      formatter: function (val) {
+        return val + 'M';
+      },
+      offsetY: -20,
+      style: {
+        fontSize: '12px',
+        colors: [legendColor]
+      }
+    },
+    colors: [config.colors.primary],
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            height: 250
+          },
+  
+          plotOptions: {
+            bar: {
+              horizontal: false,
+              columnWidth: '80%',
+              endingShape: 'rounded',
+              startingShape: 'rounded',
+              borderRadius: 4
+            }
+          },
+  
+          dataLabels: {
+            enabled: false
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: 'Pasien',
+        data: [
+          70,
+          65,
+          60,
+          55,
+          30,
+          25,
+          25
+        ]
+      }
+    ],
+    xaxis: {
+      categories: [
+        '2018',
+        '2019',
+        '2020',
+        '2021',
+        '2022',
+        '2023',
+        '2024'
+      ],
+      axisBorder: {
+        show: false,
+        color: borderColor
+      },
+      axisTicks: {
+        show: false
+      },
+      labels: {
+        style: {
+          colors: legendColor,
+          fontSize: '13px',
+          fontFamily: 'Public Sans'
+        }
+      }
+    },
+    yaxis: {
+      axisBorder: {
+        show: false
+      },
+      labels: {
+        show: false,
+        style: {
+          colors: labelColor,
+          fontSize: '13px'
+        }
+      },
+      title: {
+        show: false
+      }
+    },
+    fill: {
+      opacity: 1
+    },
+  
+    tooltip: {
+      y: {
+        formatter: function (val) {
+          return val
+        }
+      }
+    }
+  };
+  
+  var chart = new ApexCharts(document.querySelector("#fd16"), fd16);
+  chart.render();
+
+  var fd17 = {
+
+    chart: {
+      type: 'bar',
+      height: 300,
+      toolbar: {
+        show: false
+      }
+    },
+  
+    grid: {
+      xaxis: {
+        lines: {
+          show: false
+        }
+      },
+      yaxis: {
+        lines: {
+          show: false
+        }
+      }
+    },
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        columnWidth: '55%',
+        endingShape: 'rounded',
+        startingShape: 'rounded',
+        borderRadius: 4,
+        dataLabels: {
+          position: 'top', // top, center, bottom
+        }
+      }
+    },
+    legend: {
+      show: true,
+      position: 'top',
+      horizontalAlign: 'start',
+      labels: {
+        colors: legendColor,
+        useSeriesColors: false
+      }
+    },
+    dataLabels: {
+      enabled: true,
+      formatter: function (val) {
+        return val + 'M';
+      },
+      offsetY: -20,
+      style: {
+        fontSize: '12px',
+        colors: [legendColor]
+      }
+    },
+    colors: [config.colors.primary],
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            height: 250
+          },
+  
+          plotOptions: {
+            bar: {
+              horizontal: false,
+              columnWidth: '80%',
+              endingShape: 'rounded',
+              startingShape: 'rounded',
+              borderRadius: 4
+            }
+          },
+  
+          dataLabels: {
+            enabled: false
+          }
+        }
+      }
+    ],
+    series: [
+      {
+        name: 'Pasien',
+        data: [
+          70,
+          65,
+          60,
+          55,
+          30,
+          25,
+          25
+        ]
+      }
+    ],
+    xaxis: {
+      categories: [
+        '2018',
+        '2019',
+        '2020',
+        '2021',
+        '2022',
+        '2023',
+        '2024'
+      ],
+      axisBorder: {
+        show: false,
+        color: borderColor
+      },
+      axisTicks: {
+        show: false
+      },
+      labels: {
+        style: {
+          colors: legendColor,
+          fontSize: '13px',
+          fontFamily: 'Public Sans'
+        }
+      }
+    },
+    yaxis: {
+      axisBorder: {
+        show: false
+      },
+      labels: {
+        show: false,
+        style: {
+          colors: labelColor,
+          fontSize: '13px'
+        }
+      },
+      title: {
+        show: false
+      }
+    },
+    fill: {
+      opacity: 1
+    },
+  
+    tooltip: {
+      y: {
+        formatter: function (val) {
+          return val
+        }
+      }
+    }
+  };
+  
+  var chart = new ApexCharts(document.querySelector("#fd17"), fd17);
+  chart.render();
+
+  var fd18 = {
+    series: [
+      {
+        name: 'UMUM',
+        data: [
+          44,
+          55,
+          57,
+          56,
+          61,
+          58,
+          63
+        ]
+      }, {
+        name: 'BPJS',
+        data: [
+          76,
+          85,
+          101,
+          98,
+          87,
+          105,
+          91
+        ]
+      }, {
+        name: 'ASURANSI',
+        data: [
+          35,
+          41,
+          36,
+          26,
+          45,
+          48,
+          52
+        ]
+      }
+    ],
+    chart: {
+      type: 'bar',
+      height: 350,
+      toolbar: {
+        show: false
+      }
+    },
+  
+    grid: {
+      xaxis: {
+        lines: {
+          show: false
+        }
+      },
+      yaxis: {
+        lines: {
+          show: false
+        }
+      }
+    },
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        columnWidth: '55%',
+        endingShape: 'rounded',
+        startingShape: 'rounded',
+        borderRadius: 4,
+        dataLabels: {
+          position: 'top', // top, center, bottom
+        }
+      }
+    },
+    legend: {
+      show: true,
+      position: 'top',
+      horizontalAlign: 'start',
+      labels: {
+        colors: legendColor,
+        useSeriesColors: false
+      }
+    },
+    dataLabels: {
+      enabled: true,
+      formatter: function (val) {
+        return val;
+      },
+      offsetY: -20,
+      style: {
+        fontSize: '12px',
+        colors: [legendColor]
+      }
+    },
+    colors: [
+      config.colors.primary, config.colors.success, config.colors.warning
+    ],
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            height: 250
+          },
+  
+          plotOptions: {
+            bar: {
+              horizontal: false,
+              columnWidth: '80%',
+              endingShape: 'rounded',
+              startingShape: 'rounded',
+              borderRadius: 4
+            }
+          },
+  
+          dataLabels: {
+            enabled: false
+          }
+        }
+      }
+    ],
+    xaxis: {
+      categories: [
+        '2018',
+        '2019',
+        '2020',
+        '2021',
+        '2022',
+        '2023',
+        '2024'
+      ],
+      axisBorder: {
+        show: false,
+        color: borderColor
+      },
+      axisTicks: {
+        show: false
+      },
+      labels: {
+        style: {
+          colors: legendColor,
+          fontSize: '13px',
+          fontFamily: 'Public Sans'
+        }
+      }
+    },
+    yaxis: {
+      axisBorder: {
+        show: false
+      },
+      labels: {
+        show: false,
+        style: {
+          colors: labelColor,
+          fontSize: '13px'
+        }
+      },
+      title: {
+        show: false
+      }
+    },
+    fill: {
+      opacity: 1
+    },
+  
+    tooltip: {
+      y: {
+        formatter: function (val) {
+          return val + " pasien"
+        }
+      }
+    }
+  };
+  
+  var chart = new ApexCharts(document.querySelector("#fd18"), fd18);
   chart.render();
 
   var fd5 = {
@@ -1098,7 +1731,7 @@
     chart: {
       type: 'bar',
       stacked: true,
-      height: 300,
+      height: heightChart,
       toolbar: {
         show: false
       }
@@ -1118,8 +1751,10 @@
     },
     plotOptions: {
       bar: {
-        horizontal: false,
+        horizontal: true,
         columnWidth: '55%',
+        barHeight: '90%',
+        distribute: true,
         endingShape: 'rounded',
         startingShape: 'rounded',
         borderRadius: 4, 
@@ -1141,7 +1776,7 @@
       },
       style: {
         fontSize: '12px',
-        colors: [legendColor]
+        colors: ['#fff']
       }
     },
     colors: [config.colors.primary,config.colors.warning,config.colors.danger],
@@ -1149,14 +1784,10 @@
       {
         breakpoint: 480,
         options: {
-          chart: {
-            height: 250
-          },
 
           plotOptions: {
             bar: {
-              horizontal: false,
-              columnWidth: '80%',
+              columnWidth: '85%',
               endingShape: 'rounded',
               startingShape: 'rounded',
               borderRadius: 4
@@ -1284,14 +1915,15 @@
       }
     },
     yaxis: {
+      reveresed: true,
       axisBorder: {
         show: false
       },
       labels: {
-        show: false,
+        show: true,
         style: {
           colors: labelColor,
-          fontSize: '13px'
+          fontSize: '10px'
         }
       },
       title: {
@@ -1318,7 +1950,7 @@
     chart: {
       type: 'bar',
       stacked: true,
-      height: 300,
+      height: heightChart,
       toolbar: {
         show: false
       }
@@ -1338,8 +1970,10 @@
     },
     plotOptions: {
       bar: {
-        horizontal: false,
-        columnWidth: '80%',
+        horizontal: true,
+        columnWidth: '55%',
+        barHeight: '90%',
+        distribute: true,
         endingShape: 'rounded',
         startingShape: 'rounded',
         borderRadius: 4, 
@@ -1347,7 +1981,7 @@
     },
     legend: {
       show: true,
-      position: 'top',
+      position: 'bottom',
       horizontalAlign: 'center',
       labels: {
         colors: legendColor,
@@ -1361,7 +1995,7 @@
       },
       style: {
         fontSize: '12px',
-        colors: [legendColor]
+        colors: ['#fff']
       }
     },
     colors: [config.colors.primary,config.colors.warning,config.colors.danger],
@@ -1369,13 +2003,9 @@
       {
         breakpoint: 480,
         options: {
-          chart: {
-            height: 250
-          },
 
           plotOptions: {
             bar: {
-              horizontal: false,
               columnWidth: '80%',
               endingShape: 'rounded',
               startingShape: 'rounded',
@@ -1504,14 +2134,15 @@
       }
     },
     yaxis: {
+      reveresed: true,
       axisBorder: {
         show: false
       },
       labels: {
-        show: false,
+        show: true,
         style: {
           colors: labelColor,
-          fontSize: '13px'
+          fontSize: '10px'
         }
       },
       title: {
@@ -1534,11 +2165,10 @@
   var chart = new ApexCharts(document.querySelector("#fd8"), fd8);
   chart.render();
 	var fd9 = {
-
     chart: {
       type: 'bar',
       stacked: true,
-      height: 300,
+      height: heightChart,
       toolbar: {
         show: false
       }
@@ -1558,8 +2188,10 @@
     },
     plotOptions: {
       bar: {
-        horizontal: false,
-        columnWidth: '80%',
+        horizontal: true,
+        columnWidth: '55%',
+        barHeight: '90%',
+        distribute: true,
         endingShape: 'rounded',
         startingShape: 'rounded',
         borderRadius: 4, 
@@ -1567,7 +2199,7 @@
     },
     legend: {
       show: true,
-      position: 'top',
+      position: 'bottom',
       horizontalAlign: 'center',
       labels: {
         colors: legendColor,
@@ -1581,7 +2213,7 @@
       },
       style: {
         fontSize: '12px',
-        colors: [legendColor]
+        colors: ['#fff']
       }
     },
     colors: [config.colors.primary,config.colors.warning,config.colors.danger],
@@ -1589,13 +2221,9 @@
       {
         breakpoint: 480,
         options: {
-          chart: {
-            height: 250
-          },
 
           plotOptions: {
             bar: {
-              horizontal: false,
               columnWidth: '80%',
               endingShape: 'rounded',
               startingShape: 'rounded',
@@ -1724,14 +2352,15 @@
       }
     },
     yaxis: {
+      reveresed: true,
       axisBorder: {
         show: false
       },
       labels: {
-        show: false,
+        show: true,
         style: {
           colors: labelColor,
-          fontSize: '13px'
+          fontSize: '10px'
         }
       },
       title: {
