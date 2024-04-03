@@ -45,7 +45,7 @@
     }
   };
 
-  var options = {
+  var fp2 = {
     series: [
       {
         name: 'UMUM',
@@ -214,7 +214,7 @@
     }
   };
 
-  var chart = new ApexCharts(document.querySelector("#fp2"), options);
+  var chart = new ApexCharts(document.querySelector("#fp2"), fp2);
   chart.render();
 
   var fp6 = {
@@ -4427,6 +4427,205 @@
 
   var chart = new ApexCharts(document.querySelector("#fp24"), fp24);
   chart.render();
+
+  const fp25 = document.querySelector('#fp25'),
+    fp25Config = {
+      chart: {
+        height: 300,
+        type: 'bar',
+        stacked: true,
+        stackType: '100%',
+        toolbar: {
+          show: false
+        }
+      },
+      plotOptions: {
+        bar: {
+          columnWidth: '55%',
+          colors: {
+            backgroundBarColors: [
+              chartColors.column.bg,
+              chartColors.column.bg,
+              chartColors.column.bg,
+            ],
+            backgroundBarRadius: 10
+          }
+        }
+      },
+      dataLabels: {
+        enabled: true,
+        style: {
+          fontSize: '12px',
+          colors: [legendColor]
+        }
+      },
+      legend: {
+        show: true,
+        position: 'top',
+        horizontalAlign: 'start',
+        labels: {
+          colors: legendColor,
+          useSeriesColors: false
+        }
+      },
+      colors: ["#3ad780", "#76e4a7", "#b3f0ce"],
+      stroke: {
+        show: true,
+        colors: ['transparent']
+      },
+      grid: {
+        borderColor: borderColor,
+        xaxis: {
+          lines: {
+            show: false
+          }
+        },
+        yaxis: {
+          lines: {
+            show: false
+          }
+        },
+      },
+      series: [
+        {
+          name: 'UMUM',
+          data: [44, 55, 57, 56, 61, 58, 63]
+        },
+        {
+          name: 'BPJS',
+          data: [76, 85, 101, 98, 87, 105, 91]
+        },
+        {
+          name: 'ASURANSI',
+          data: [35, 41, 36, 26, 45, 48, 52]
+        }
+      
+      ],
+      xaxis: {
+        categories: ['2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+        axisBorder: {
+          show: false
+        },
+        axisTicks: {
+          show: false
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '13px'
+          }
+        }
+      },
+      yaxis: {
+        show: false
+      },
+      fill: {
+        opacity: 1
+      }
+    };
+  if (typeof fp25 !== undefined && fp25 !== null) {
+    const barChart = new ApexCharts(fp25, fp25Config);
+    barChart.render();
+  }
+
+  const fp26 = document.querySelector('#fp26'),
+    fp26Config = {
+      chart: {
+        height: 300,
+        type: 'bar',
+        stacked: true,
+        stackType: '100%',
+        toolbar: {
+          show: false
+        }
+      },
+      plotOptions: {
+        bar: {
+          columnWidth: '55%',
+          colors: {
+            backgroundBarColors: [
+              chartColors.column.bg,
+              chartColors.column.bg,
+              chartColors.column.bg,
+            ],
+            backgroundBarRadius: 10
+          }
+        }
+      },
+      dataLabels: {
+        enabled: true,
+        style: {
+          fontSize: '12px',
+        }
+      },
+      legend: {
+        show: true,
+        position: 'top',
+        horizontalAlign: 'start',
+        labels: {
+          colors: legendColor,
+          useSeriesColors: false
+        }
+      },
+      colors: [config.colors.primary, "#6b5eef", "#ada6f6"],
+      stroke: {
+        show: true,
+        colors: ['transparent']
+      },
+      grid: {
+        borderColor: borderColor,
+        xaxis: {
+          lines: {
+            show: false
+          }
+        },
+        yaxis: {
+          lines: {
+            show: false
+          }
+        },
+      },
+      series: [
+        {
+          name: 'UMUM',
+          data: [44, 55, 57, 56, 61, 58, 63]
+        },
+        {
+          name: 'BPJS',
+          data: [76, 85, 101, 98, 87, 105, 91]
+        },
+        {
+          name: 'ASURANSI',
+          data: [35, 41, 36, 26, 45, 48, 52]
+        }
+      
+      ],
+      xaxis: {
+        categories: ['2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+        axisBorder: {
+          show: false
+        },
+        axisTicks: {
+          show: false
+        },
+        labels: {
+          style: {
+            colors: labelColor,
+            fontSize: '13px'
+          }
+        }
+      },
+      yaxis: {
+        show: false
+      },
+      fill: {
+        opacity: 1
+      }
+    };
+  if (typeof fp26 !== undefined && fp26 !== null) {
+    const barChart = new ApexCharts(fp26, fp26Config);
+    barChart.render();
+  }
 
 
   var fp18 = {

@@ -569,6 +569,14 @@
                             </div>
 
                         </div>
+                        <div class="col-lg-6">
+                            <h4 class="card-title mt-4">Persentase Kunjungan Pasien Rawat Jalan Berdasarkan Jenis Pasien</h4>
+                            <div id="fp25" class="mb-4"></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h4 class="card-title mt-4">Persentase Kunjungan Pasien Rawat Inap Berdasarkan Jenis Pasien</h4>
+                            <div id="fp26" class="mb-4"></div>
+                        </div>
                     </div>
                 </div>
             </div>
