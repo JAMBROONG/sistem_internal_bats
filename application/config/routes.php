@@ -62,7 +62,7 @@ $route['hospital-app-get-yearly-disease'] = 'Hospital/get_yearly_disease';
 $route['hospital-app-get-yearly-unit'] = 'Hospital/get_yearly_unit';
 $route['hospital-app-get-yearly-product'] = 'Hospital/get_yearly_product';
 $route['hospital-app-get-yearly-medicine'] = 'Hospital/get_yearly_medicine';
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 
 $route['hospital-app-date'] = 'Hospital/index';
 $route['hospital-app'] = 'Hospital/pasien';
