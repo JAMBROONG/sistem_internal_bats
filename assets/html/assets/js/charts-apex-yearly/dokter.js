@@ -26,7 +26,7 @@
 		borderColor = config.colors.borderColor;
 	}
 
-	heightChart = "100%";
+	heightChart = "90%";
 
 	// Color constant
 	const chartColors = {
@@ -51,7 +51,7 @@
 	var fd1 = {
 		chart: {
 			type: "bar",
-			// height: heightChart,
+			height: '300%',
 			toolbar: {
 				show: false,
 			},
@@ -112,7 +112,7 @@
 						reversed: false,
 					},
 					chart: {
-						height: 250,
+						height: "200%",
 					},
 
 					plotOptions: {
@@ -213,7 +213,7 @@
 	var fd2 = {
 		chart: {
 			type: "bar",
-			// height: 350,
+      height: '300%',
 			toolbar: {
 				show: false,
 			},
@@ -272,7 +272,7 @@
 						reversed: false,
 					},
 					chart: {
-						height: 250,
+						height: "200%",
 					},
 
 					plotOptions: {
@@ -373,7 +373,7 @@
 	var fd3 = {
 		chart: {
 			type: "bar",
-			// height: 350,
+			height: '300%',
 			toolbar: {
 				show: false,
 			},
@@ -432,7 +432,7 @@
 						reversed: false,
 					},
 					chart: {
-						height: 250,
+						height: "200%",
 					},
 
 					plotOptions: {
@@ -587,7 +587,7 @@
 				breakpoint: 480,
 				options: {
 					chart: {
-						height: 250,
+						height: '200%',
 					},
 
 					plotOptions: {
@@ -657,7 +657,7 @@
 				show: false,
 			},
 			labels: {
-				show: false,
+				show: true,
 				style: {
 					colors: labelColor,
 					fontSize: "13px",
@@ -1226,6 +1226,7 @@
 	var fd5 = {
 		chart: {
 			type: "bar",
+      height: '300%',
 			toolbar: {
 				show: false,
 			},
@@ -1284,7 +1285,7 @@
 						reversed: false,
 					},
 					chart: {
-						height: 250,
+						height: '200%',
 					},
 
 					plotOptions: {
@@ -1294,9 +1295,6 @@
 							startingShape: "rounded",
 							borderRadius: 4,
 						},
-					},
-					yaxis: {
-						reversed: true,
 					},
 
 					dataLabels: {
@@ -1387,6 +1385,7 @@
 	var fd6 = {
 		chart: {
 			type: "bar",
+      height: heightChart,
 			toolbar: {
 				show: false,
 			},
@@ -1442,12 +1441,12 @@
 				breakpoint: 480,
 				options: {
 					chart: {
-						height: 250,
+						height: '200%',
 					},
 
 					plotOptions: {
 						bar: {
-							horizontal: false,
+							// horizontal: true,
 							columnWidth: "80%",
 							endingShape: "rounded",
 							startingShape: "rounded",
@@ -1607,6 +1606,9 @@
 							startingShape: "rounded",
 							borderRadius: 4,
 						},
+					},
+          chart: {
+						height: "200%",
 					},
 
 					dataLabels: {
@@ -1777,6 +1779,10 @@
 						},
 					},
 
+          chart: {
+						height: "200%",
+					},
+
 					dataLabels: {
 						enabled: false,
 					},
@@ -1943,6 +1949,10 @@
 							startingShape: "rounded",
 							borderRadius: 4,
 						},
+					},
+
+          chart: {
+						height: "200%",
 					},
 
 					dataLabels: {
