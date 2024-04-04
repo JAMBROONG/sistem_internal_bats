@@ -310,8 +310,8 @@
       }
     },
     legend: {
-      show: true,
-      horizontalAlign: 'start',
+      position: 'top',
+      horizontalAlign: 'left',
       labels: {
         colors: legendColor,
         useSeriesColors: false
@@ -480,8 +480,8 @@
       }
     },
     legend: {
-      show: true,
-      horizontalAlign: 'start',
+      position: 'top',
+      horizontalAlign: 'left',
       labels: {
         colors: legendColor,
         useSeriesColors: false
@@ -655,6 +655,13 @@
       axisBorder: {
         show: false
       },
+      labels: {
+        style: {
+          colors: legendColor,
+          fontSize: '13px',
+          fontFamily: 'Public Sans'
+        }
+      }
     },
     yaxis: {
       title: {
@@ -667,8 +674,13 @@
     },
     legend: {
       position: 'top',
-      horizontalAlign: 'right',
-      floating: true, 
+      horizontalAlign: 'left',
+      floating: true,  
+			
+      labels: {
+        colors: legendColor,
+        useSeriesColors: false
+      }
     },
 		
     grid: {
@@ -688,4 +700,27 @@
   var chart = new ApexCharts(document.querySelector("#fu4"), fu4);
   chart.render();
 
+	 
+	var fu5 = {
+		series: [44, 55, 13, 43, 22],
+		chart: {
+		width: 380,
+		type: 'pie',
+	},
+	labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+	responsive: [{
+		breakpoint: 480,
+		options: {
+			chart: {
+				width: 200
+			},
+			legend: {
+				position: 'bottom'
+			}
+		}
+	}]
+	};
+
+	var chart = new ApexCharts(document.querySelector("#fu5"), fu5);
+	chart.render();
 })();
