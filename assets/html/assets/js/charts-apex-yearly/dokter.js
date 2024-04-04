@@ -51,7 +51,7 @@
 	var fd1 = {
 		chart: {
 			type: "bar",
-			height: '300%',
+			height: "300%",
 			toolbar: {
 				show: false,
 			},
@@ -213,7 +213,7 @@
 	var fd2 = {
 		chart: {
 			type: "bar",
-      height: '300%',
+			height: "300%",
 			toolbar: {
 				show: false,
 			},
@@ -373,7 +373,7 @@
 	var fd3 = {
 		chart: {
 			type: "bar",
-			height: '300%',
+			height: "300%",
 			toolbar: {
 				show: false,
 			},
@@ -587,7 +587,7 @@
 				breakpoint: 480,
 				options: {
 					chart: {
-						height: '200%',
+						height: "200%",
 					},
 
 					plotOptions: {
@@ -1223,10 +1223,938 @@
 	var chart = new ApexCharts(document.querySelector("#fd18"), fd18);
 	chart.render();
 
+	var fd19 = {
+		series: [
+			{
+				name: "UMUM",
+				data: [44, 55, 57, 56, 61, 58, 63],
+			},
+			{
+				name: "BPJS",
+				data: [76, 85, 101, 98, 87, 105, 91],
+			},
+			{
+				name: "ASURANSI",
+				data: [35, 41, 36, 26, 45, 48, 52],
+			},
+		],
+		chart: {
+			type: "bar",
+			height: 350,
+			toolbar: {
+				show: false,
+			},
+		},
+
+		grid: {
+			xaxis: {
+				lines: {
+					show: false,
+				},
+			},
+			yaxis: {
+				lines: {
+					show: false,
+				},
+			},
+		},
+		plotOptions: {
+			bar: {
+				horizontal: false,
+				columnWidth: "55%",
+				endingShape: "rounded",
+				startingShape: "rounded",
+				borderRadius: 4,
+				dataLabels: {
+					position: "top", // top, center, bottom
+				},
+			},
+		},
+		legend: {
+			show: true,
+			position: "top",
+			horizontalAlign: "start",
+			labels: {
+				colors: legendColor,
+				useSeriesColors: false,
+			},
+		},
+		dataLabels: {
+			enabled: true,
+			formatter: function (val) {
+				return val;
+			},
+			offsetY: -20,
+			style: {
+				fontSize: "12px",
+				colors: [legendColor],
+			},
+		},
+		colors: [
+			config.colors.primary,
+			config.colors.success,
+			config.colors.warning,
+		],
+		responsive: [
+			{
+				breakpoint: 480,
+				options: {
+					chart: {
+						height: 250,
+					},
+
+					plotOptions: {
+						bar: {
+							horizontal: false,
+							columnWidth: "80%",
+							endingShape: "rounded",
+							startingShape: "rounded",
+							borderRadius: 4,
+						},
+					},
+
+					dataLabels: {
+						enabled: false,
+					},
+				},
+			},
+		],
+		xaxis: {
+			categories: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+			axisBorder: {
+				show: false,
+				color: borderColor,
+			},
+			axisTicks: {
+				show: false,
+			},
+			labels: {
+				style: {
+					colors: legendColor,
+					fontSize: "13px",
+					fontFamily: "Public Sans",
+				},
+			},
+		},
+		yaxis: {
+			axisBorder: {
+				show: false,
+			},
+			labels: {
+				show: false,
+				style: {
+					colors: labelColor,
+					fontSize: "13px",
+				},
+			},
+			title: {
+				show: false,
+			},
+		},
+		fill: {
+			opacity: 1,
+		},
+
+		tooltip: {
+			y: {
+				formatter: function (val) {
+					return val + " pasien";
+				},
+			},
+		},
+	};
+
+	var chart = new ApexCharts(document.querySelector("#fd19"), fd19);
+	chart.render();
+
+	var fd20 = {
+		series: [
+			{
+				name: "UMUM",
+				data: [44, 55, 57, 56, 61, 58, 63],
+			},
+			{
+				name: "BPJS",
+				data: [76, 85, 101, 98, 87, 105, 91],
+			},
+			{
+				name: "ASURANSI",
+				data: [35, 41, 36, 26, 45, 48, 52],
+			},
+		],
+		chart: {
+			type: "bar",
+			height: 350,
+			toolbar: {
+				show: false,
+			},
+		},
+
+		grid: {
+			xaxis: {
+				lines: {
+					show: false,
+				},
+			},
+			yaxis: {
+				lines: {
+					show: false,
+				},
+			},
+		},
+		plotOptions: {
+			bar: {
+				horizontal: false,
+				columnWidth: "55%",
+				endingShape: "rounded",
+				startingShape: "rounded",
+				borderRadius: 4,
+				dataLabels: {
+					position: "top", // top, center, bottom
+				},
+			},
+		},
+		legend: {
+			show: true,
+			position: "top",
+			horizontalAlign: "start",
+			labels: {
+				colors: legendColor,
+				useSeriesColors: false,
+			},
+		},
+		dataLabels: {
+			enabled: true,
+			formatter: function (val) {
+				return val;
+			},
+			offsetY: -20,
+			style: {
+				fontSize: "12px",
+				colors: [legendColor],
+			},
+		},
+		colors: [
+			config.colors.primary,
+			config.colors.success,
+			config.colors.warning,
+		],
+		responsive: [
+			{
+				breakpoint: 480,
+				options: {
+					chart: {
+						height: 250,
+					},
+
+					plotOptions: {
+						bar: {
+							horizontal: false,
+							columnWidth: "80%",
+							endingShape: "rounded",
+							startingShape: "rounded",
+							borderRadius: 4,
+						},
+					},
+
+					dataLabels: {
+						enabled: false,
+					},
+				},
+			},
+		],
+		xaxis: {
+			categories: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+			axisBorder: {
+				show: false,
+				color: borderColor,
+			},
+			axisTicks: {
+				show: false,
+			},
+			labels: {
+				style: {
+					colors: legendColor,
+					fontSize: "13px",
+					fontFamily: "Public Sans",
+				},
+			},
+		},
+		yaxis: {
+			axisBorder: {
+				show: false,
+			},
+			labels: {
+				show: false,
+				style: {
+					colors: labelColor,
+					fontSize: "13px",
+				},
+			},
+			title: {
+				show: false,
+			},
+		},
+		fill: {
+			opacity: 1,
+		},
+
+		tooltip: {
+			y: {
+				formatter: function (val) {
+					return val + " pasien";
+				},
+			},
+		},
+	};
+
+	var chart = new ApexCharts(document.querySelector("#fd20"), fd20);
+	chart.render();
+
+	var fd20 = {
+		series: [
+			{
+				name: "UMUM",
+				data: [44, 55, 57, 56, 61, 58, 63],
+			},
+			{
+				name: "BPJS",
+				data: [76, 85, 101, 98, 87, 105, 91],
+			},
+			{
+				name: "ASURANSI",
+				data: [35, 41, 36, 26, 45, 48, 52],
+			},
+		],
+		chart: {
+			type: "bar",
+			height: 350,
+			toolbar: {
+				show: false,
+			},
+		},
+
+		grid: {
+			xaxis: {
+				lines: {
+					show: false,
+				},
+			},
+			yaxis: {
+				lines: {
+					show: false,
+				},
+			},
+		},
+		plotOptions: {
+			bar: {
+				horizontal: false,
+				columnWidth: "55%",
+				endingShape: "rounded",
+				startingShape: "rounded",
+				borderRadius: 4,
+				dataLabels: {
+					position: "top", // top, center, bottom
+				},
+			},
+		},
+		legend: {
+			show: true,
+			position: "top",
+			horizontalAlign: "start",
+			labels: {
+				colors: legendColor,
+				useSeriesColors: false,
+			},
+		},
+		dataLabels: {
+			enabled: true,
+			formatter: function (val) {
+				return val;
+			},
+			offsetY: -20,
+			style: {
+				fontSize: "12px",
+				colors: [legendColor],
+			},
+		},
+		colors: [
+			config.colors.primary,
+			config.colors.success,
+			config.colors.warning,
+		],
+		responsive: [
+			{
+				breakpoint: 480,
+				options: {
+					chart: {
+						height: 250,
+					},
+
+					plotOptions: {
+						bar: {
+							horizontal: false,
+							columnWidth: "80%",
+							endingShape: "rounded",
+							startingShape: "rounded",
+							borderRadius: 4,
+						},
+					},
+
+					dataLabels: {
+						enabled: false,
+					},
+				},
+			},
+		],
+		xaxis: {
+			categories: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+			axisBorder: {
+				show: false,
+				color: borderColor,
+			},
+			axisTicks: {
+				show: false,
+			},
+			labels: {
+				style: {
+					colors: legendColor,
+					fontSize: "13px",
+					fontFamily: "Public Sans",
+				},
+			},
+		},
+		yaxis: {
+			axisBorder: {
+				show: false,
+			},
+			labels: {
+				show: false,
+				style: {
+					colors: labelColor,
+					fontSize: "13px",
+				},
+			},
+			title: {
+				show: false,
+			},
+		},
+		fill: {
+			opacity: 1,
+		},
+
+		tooltip: {
+			y: {
+				formatter: function (val) {
+					return val + " pasien";
+				},
+			},
+		},
+	};
+
+	var chart = new ApexCharts(document.querySelector("#fd20"), fd20);
+	chart.render();
+
+	var fd21 = {
+		series: [
+			{
+				name: "UMUM",
+				data: [82, 55, 70, 45, 50, 65, 90, 42, 30, 78, 60, 47, 35, 80, 28, 33, 70, 93, 25, 72]
+			},
+			{
+				name: "BPJS",
+				data: [68, 60, 75, 38, 45, 80, 95, 55, 40, 63, 50, 57, 42, 85, 40, 25, 20, 89, 35, 68]
+			},
+			{
+				name: "ASURANSI",
+				data: [75, 70, 85, 50, 55, 85, 100, 60, 50, 70, 45, 52, 38, 90, 45, 28, 40, 97, 30, 80]
+			},
+		],
+		chart: {
+			type: "bar",
+			height: "500%",
+			toolbar: {
+				show: false,
+			},
+		},
+
+		grid: {
+			xaxis: {
+				lines: {
+					show: false,
+				},
+			},
+			yaxis: {
+				lines: {
+					show: false,
+				},
+			},
+		},
+		plotOptions: {
+			bar: {
+				horizontal: true,
+				columnWidth: "55%",
+				endingShape: "rounded",
+				startingShape: "rounded",
+				borderRadius: 4,
+				dataLabels: {
+					position: "top", // top, center, bottom
+				},
+			},
+		},
+		legend: {
+			show: true,
+			position: "top",
+			horizontalAlign: "start",
+			labels: {
+				colors: legendColor,
+				useSeriesColors: false,
+			},
+		},
+		dataLabels: {
+			enabled: true,
+			formatter: function (val) {
+				return val;
+			},
+			offsetX: 20,
+			style: {
+				fontSize: "12px",
+				colors: [legendColor],
+			},
+		},
+		colors: [
+			config.colors.primary,
+			config.colors.success,
+			config.colors.warning,
+		],
+		responsive: [
+			{
+				breakpoint: 480,
+				options: {
+					chart: {
+						height: 250,
+					},
+
+					plotOptions: {
+						bar: {
+							horizontal: false,
+							columnWidth: "80%",
+							endingShape: "rounded",
+							startingShape: "rounded",
+							borderRadius: 4,
+						},
+					},
+
+					dataLabels: {
+						enabled: false,
+					},
+				},
+			},
+		],
+		xaxis: {
+			categories: [
+				"Dokter M",
+				"Dokter J",
+				"Dokter R",
+				"Dokter T",
+				"Dokter O",
+				"Dokter K",
+				"Dokter P",
+				"Dokter C",
+				"Dokter N",
+				"Dokter L",
+				"Dokter A",
+				"Dokter E",
+				"Dokter Q",
+				"Dokter G",
+				"Dokter D",
+				"Dokter F",
+				"Dokter B",
+				"Dokter S",
+				"Dokter I",
+				"Dokter H",
+			],
+			axisBorder: {
+				show: false,
+				color: borderColor,
+			},
+			axisTicks: {
+				show: false,
+			},
+			labels: {
+				style: {
+					colors: legendColor,
+					fontSize: "13px",
+					fontFamily: "Public Sans",
+				},
+			},
+		},
+		yaxis: {
+			axisBorder: {
+				show: false,
+			},
+			labels: {
+				show: true,
+				style: {
+					colors: labelColor,
+					fontSize: "13px",
+				},
+			},
+			title: {
+				show: false,
+			},
+		},
+		fill: {
+			opacity: 1,
+		},
+
+		tooltip: {
+			y: {
+				formatter: function (val) {
+					return val + " pasien";
+				},
+			},
+		},
+	};
+
+	var chart = new ApexCharts(document.querySelector("#fd21"), fd21);
+	chart.render();
+
+	var fd22 = {
+		series: [
+			{
+				name: "UMUM",
+				data: [82, 55, 70, 45, 50, 65, 90, 42, 30, 78, 60, 47, 35, 80, 28, 33, 70, 93, 25, 72]
+			},
+			{
+				name: "BPJS",
+				data: [68, 60, 75, 38, 45, 80, 95, 55, 40, 63, 50, 57, 42, 85, 40, 25, 20, 89, 35, 68]
+			},
+			{
+				name: "ASURANSI",
+				data: [75, 70, 85, 50, 55, 85, 100, 60, 50, 70, 45, 52, 38, 90, 45, 28, 40, 97, 30, 80]
+			},
+		],
+		chart: {
+			type: "bar",
+			height: "500%",
+			toolbar: {
+				show: false,
+			},
+		},
+	
+		grid: {
+			xaxis: {
+				lines: {
+					show: false,
+				},
+			},
+			yaxis: {
+				lines: {
+					show: false,
+				},
+			},
+		},
+		plotOptions: {
+			bar: {
+				horizontal: true,
+				columnWidth: "55%",
+				endingShape: "rounded",
+				startingShape: "rounded",
+				borderRadius: 4,
+				dataLabels: {
+					position: "bottom", // top, center, bottom
+				},
+			},
+		},
+		legend: {
+			show: true,
+			position: "top",
+			horizontalAlign: "start",
+			labels: {
+				colors: legendColor,
+				useSeriesColors: false,
+			},
+		},
+		dataLabels: {
+			enabled: true,
+			formatter: function (val) {
+				return val;
+			},
+			offsetX: -20,
+			style: {
+				fontSize: "12px",
+				colors: [legendColor],
+			},
+		},
+		colors: [
+			config.colors.primary,
+			config.colors.success,
+			config.colors.warning,
+		],
+		responsive: [
+			{
+				breakpoint: 480,
+				options: {
+					chart: {
+						height: 250,
+					},
+	
+					plotOptions: {
+						bar: {
+							horizontal: false,
+							columnWidth: "80%",
+							endingShape: "rounded",
+							startingShape: "rounded",
+							borderRadius: 4,
+						},
+					},
+	
+					dataLabels: {
+						enabled: false,
+					},
+				},
+			},
+		],
+		xaxis: {
+			categories: [
+				"Dokter M",
+				"Dokter J",
+				"Dokter R",
+				"Dokter T",
+				"Dokter O",
+				"Dokter K",
+				"Dokter P",
+				"Dokter C",
+				"Dokter N",
+				"Dokter L",
+				"Dokter A",
+				"Dokter E",
+				"Dokter Q",
+				"Dokter G",
+				"Dokter D",
+				"Dokter F",
+				"Dokter B",
+				"Dokter S",
+				"Dokter I",
+				"Dokter H",
+			],
+			axisBorder: {
+				show: false,
+				color: borderColor,
+			},
+			axisTicks: {
+				show: false,
+			},
+			labels: {
+				style: {
+					colors: legendColor,
+					fontSize: "13px",
+					fontFamily: "Public Sans",
+				},
+			},
+		},
+		yaxis: {
+			reversed: true,
+			axisBorder: {
+				show: false,
+			},
+			labels: {
+				show: true,
+				style: {
+					colors: labelColor,
+					fontSize: "13px",
+				},
+			},
+			title: {
+				show: false,
+			},
+		},
+		fill: {
+			opacity: 1,
+		},
+	
+		tooltip: {
+			y: {
+				formatter: function (val) {
+					return val + " pasien";
+				},
+			},
+		},
+	};
+	
+	var chart = new ApexCharts(document.querySelector("#fd22"), fd22);
+	chart.render();
+
+	var fd23 = {
+		series: [
+			{
+				name: "UMUM",
+				data: [82, 55, 70, 45, 50, 65, 90, 42, 30, 78, 60, 47, 35, 80, 28, 33, 70, 93, 25, 72]
+			},
+			{
+				name: "BPJS",
+				data: [68, 60, 75, 38, 45, 80, 95, 55, 40, 63, 50, 57, 42, 85, 40, 25, 20, 89, 35, 68]
+			},
+			{
+				name: "ASURANSI",
+				data: [75, 70, 85, 50, 55, 85, 100, 60, 50, 70, 45, 52, 38, 90, 45, 28, 40, 97, 30, 80]
+			},
+		],
+		chart: {
+			type: "bar",
+			height: "95%",
+			toolbar: {
+				show: false,
+			},
+		},
+	
+		grid: {
+			xaxis: {
+				lines: {
+					show: false,
+				},
+			},
+			yaxis: {
+				lines: {
+					show: false,
+				},
+			},
+		},
+		plotOptions: {
+			bar: {
+				horizontal: true,
+				columnWidth: "55%",
+				endingShape: "rounded",
+				startingShape: "rounded",
+				borderRadius: 4,
+				dataLabels: {
+					position: "top", // top, center, bottom
+				},
+			},
+		},
+		legend: {
+			show: true,
+			position: "top",
+			horizontalAlign: "start",
+			labels: {
+				colors: legendColor,
+				useSeriesColors: false,
+			},
+		},
+		dataLabels: {
+			enabled: true,
+			formatter: function (val) {
+				return val;
+			},
+			offsetX: 20,
+			style: {
+				fontSize: "12px",
+				colors: [legendColor],
+			},
+		},
+		colors: [
+			config.colors.primary,
+			config.colors.success,
+			config.colors.warning,
+		],
+		responsive: [
+			{
+				breakpoint: 480,
+				options: {
+					chart: {
+						height: 250,
+					},
+	
+					plotOptions: {
+						bar: {
+							horizontal: false,
+							columnWidth: "80%",
+							endingShape: "rounded",
+							startingShape: "rounded",
+							borderRadius: 4,
+						},
+					},
+	
+					dataLabels: {
+						enabled: false,
+					},
+				},
+			},
+		],
+		xaxis: {
+			categories: [
+				"Dokter M",
+				"Dokter J",
+				"Dokter R",
+				"Dokter T",
+				"Dokter O",
+				"Dokter K",
+				"Dokter P",
+				"Dokter C",
+				"Dokter N",
+				"Dokter L",
+				"Dokter A",
+				"Dokter E",
+				"Dokter Q",
+				"Dokter G",
+				"Dokter D",
+				"Dokter F",
+				"Dokter B",
+				"Dokter S",
+				"Dokter I",
+				"Dokter H",
+			],
+			axisBorder: {
+				show: false,
+				color: borderColor,
+			},
+			axisTicks: {
+				show: false,
+			},
+			labels: {
+				style: {
+					colors: legendColor,
+					fontSize: "13px",
+					fontFamily: "Public Sans",
+				},
+			},
+		},
+		yaxis: {
+			axisBorder: {
+				show: false,
+			},
+			labels: {
+				show: true,
+				style: {
+					colors: labelColor,
+					fontSize: "13px",
+				},
+			},
+			title: {
+				show: false,
+			},
+		},
+		fill: {
+			opacity: 1,
+		},
+	
+		tooltip: {
+			y: {
+				formatter: function (val) {
+					return val + " pasien";
+				},
+			},
+		},
+	};
+	
+	var chart = new ApexCharts(document.querySelector("#fd23"), fd23);
+	chart.render();
+
 	var fd5 = {
 		chart: {
 			type: "bar",
-      height: '300%',
+			height: "300%",
 			toolbar: {
 				show: false,
 			},
@@ -1281,11 +2209,11 @@
 			{
 				breakpoint: 480,
 				options: {
-          yaxis: {
+					yaxis: {
 						reversed: false,
 					},
 					chart: {
-						height: '200%',
+						height: "200%",
 					},
 
 					plotOptions: {
@@ -1385,7 +2313,7 @@
 	var fd6 = {
 		chart: {
 			type: "bar",
-      height: heightChart,
+			height: heightChart,
 			toolbar: {
 				show: false,
 			},
@@ -1441,7 +2369,7 @@
 				breakpoint: 480,
 				options: {
 					chart: {
-						height: '200%',
+						height: "200%",
 					},
 
 					plotOptions: {
@@ -1607,7 +2535,7 @@
 							borderRadius: 4,
 						},
 					},
-          chart: {
+					chart: {
 						height: "200%",
 					},
 
@@ -1779,7 +2707,7 @@
 						},
 					},
 
-          chart: {
+					chart: {
 						height: "200%",
 					},
 
@@ -1951,7 +2879,7 @@
 						},
 					},
 
-          chart: {
+					chart: {
 						height: "200%",
 					},
 

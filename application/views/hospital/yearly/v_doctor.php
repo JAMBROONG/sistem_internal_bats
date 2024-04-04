@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="row mb-4 g-4">
-    <div class="col-lg-12">
+        <div class="col-lg-12">
             <div class="card text-start h-100">
                 <div class="card-body">
                     <div class="d-flex justify-content-between">
@@ -22,9 +22,9 @@
                                     <thead>
                                         <tr>
                                             <th class=" align-middle text-center bg-body" rowspan="2">Nama Dokter</th>
-                                            <th class="text-center bg-body" colspan="7">Tahun</th> 
+                                            <th class="text-center bg-body" colspan="7">Tahun</th>
                                         </tr>
-                                        <tr> 
+                                        <tr>
                                             <th class="text-center bg-body">2018</th>
                                             <th class="text-center bg-body">2019</th>
                                             <th class="text-center bg-body">2020</th>
@@ -141,8 +141,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="fd10">
-                    </div>
+                    <div id="fd10"></div>
                 </div>
             </div>
         </div>
@@ -210,6 +209,7 @@
         </div>
     </div>
     <div class="row mb-4 g-4">
+
         <div class="col-lg-12">
             <div class="card text-start h-100">
                 <div class="card-body">
@@ -233,6 +233,33 @@
                 <div class="card-body">
                     <h4 class="card-title">Pendapatan dari Pelayanan Dokter untuk Rawat Inap Pertahun</h4>
                     <div id="fd17">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="card text-start h-100">
+                <div class="card-body">
+                    <h4 class="card-title">Pendapatan dari Pelayanan Dokter untuk Rawat Jalan dan Rawat Inap Pertahun Berdasarkan Jenis Pasien</h4>
+                    <div id="fd18">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card text-start h-100">
+                <div class="card-body">
+                    <h4 class="card-title">Pendapatan dari Pelayanan Dokter untuk Rawat Jalan Pertahun Berdasarkan Jenis Pasien</h4>
+                    <div id="fd19">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card text-start h-100">
+                <div class="card-body">
+                    <h4 class="card-title">Pendapatan dari Pelayanan Dokter untuk Rawat Inap Pertahun Berdasarkan Jenis Pasien</h4>
+                    <div id="fd20">
                     </div>
                 </div>
             </div>
@@ -267,8 +294,26 @@
         <div class="col-lg-12">
             <div class="card text-start h-100">
                 <div class="card-body">
-                    <h4 class="card-title">Pendapatan dari Pelayanan Dokter untuk Rawat Jalan dan Rawat Inap Pertahun Berdasarkan Jenis Pasien</h4>
-                    <div id="fd18">
+                    <h4 class="card-title">Pendapatan dari Pelayanan Dokter untuk Rawat Jalan dan Rawat Inap Berdasarkan Jenis Pasien per Dokter</h4>
+                    <div id="fd21">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card text-start h-100">
+                <div class="card-body">
+                    <h4 class="card-title">Pendapatan dari Pelayanan Dokter untuk Rawat Jalan Berdasarkan Jenis Pasien per Dokter</h4>
+                    <div id="fd22">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card text-start h-100">
+                <div class="card-body">
+                    <h4 class="card-title">Pendapatan dari Pelayanan Dokter untuk Rawat Inap Berdasarkan Jenis Pasien per Dokter</h4>
+                    <div id="fd23">
                     </div>
                 </div>
             </div>
