@@ -1732,12 +1732,12 @@
 				breakpoint: 480,
 				options: {
 					chart: {
-						height: 250,
+						height: "150%",
 					},
 
 					plotOptions: {
 						bar: {
-							horizontal: false,
+							horizontal: true,
 							columnWidth: "80%",
 							endingShape: "rounded",
 							startingShape: "rounded",
@@ -1837,7 +1837,7 @@
 		],
 		chart: {
 			type: "bar",
-			height: "500%",
+			height: "95%",
 			toolbar: {
 				show: false,
 			},
@@ -1863,7 +1863,7 @@
 				startingShape: "rounded",
 				borderRadius: 4,
 				dataLabels: {
-					position: "bottom", // top, center, bottom
+					position: "top", // top, center, bottom
 				},
 			},
 		},
@@ -1881,7 +1881,7 @@
 			formatter: function (val) {
 				return val;
 			},
-			offsetX: -20,
+			offsetX: 20,
 			style: {
 				fontSize: "12px",
 				colors: [legendColor],
@@ -1897,16 +1897,26 @@
 				breakpoint: 480,
 				options: {
 					chart: {
-						height: 250,
+						height: "150%",
 					},
 	
 					plotOptions: {
 						bar: {
-							horizontal: false,
+							horizontal: true,
 							columnWidth: "80%",
 							endingShape: "rounded",
 							startingShape: "rounded",
 							borderRadius: 4,
+						},
+					},
+	
+					yaxis: {
+						reversed: false,
+						labels: {
+							style: {
+								colors: legendColor,
+								fontSize: "13px",
+							},
 						},
 					},
 	
@@ -2063,19 +2073,19 @@
 				breakpoint: 480,
 				options: {
 					chart: {
-						height: 250,
+						height: "150%",
 					},
 	
 					plotOptions: {
 						bar: {
-							horizontal: false,
+							horizontal: true,
 							columnWidth: "80%",
 							endingShape: "rounded",
 							startingShape: "rounded",
 							borderRadius: 4,
 						},
 					},
-	
+
 					dataLabels: {
 						enabled: false,
 					},
