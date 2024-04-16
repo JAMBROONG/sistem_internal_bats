@@ -51,7 +51,7 @@
 	var fd1 = {
 		chart: {
 			type: "bar",
-			height: "300%",
+			height: "350",
 			toolbar: {
 				show: false,
 			},
@@ -70,8 +70,7 @@
 			},
 		},
 		plotOptions: {
-			bar: {
-				horizontal: true,
+			bar: { 
 				columnWidth: "55%",
 				// barHeight: '100%',
 				// distribute: true,
@@ -79,7 +78,7 @@
 				startingShape: "rounded",
 				borderRadius: 4,
 				dataLabels: {
-					position: "bottom", // top, center, bottom
+					position: "top", // top, center, bottom
 				},
 			},
 		},
@@ -97,7 +96,7 @@
 			formatter: function (val) {
 				return val;
 			},
-			offsetX: -20,
+			offsetY: -20,
 			style: {
 				fontSize: "12px",
 				colors: [legendColor],
@@ -135,8 +134,7 @@
 			{
 				name: "Pasien",
 				data: [
-					70, 65, 60, 55, 55, 55, 50, 50, 45, 45, 40, 40, 40, 40, 35, 35, 30,
-					30, 25, 25,
+					70, 65, 60, 55, 55, 55, 50, 50, 45, 45
 				],
 			},
 		],
@@ -151,17 +149,7 @@
 				"Dokter P",
 				"Dokter C",
 				"Dokter N",
-				"Dokter L",
-				"Dokter A",
-				"Dokter E",
-				"Dokter Q",
-				"Dokter G",
-				"Dokter D",
-				"Dokter F",
-				"Dokter B",
-				"Dokter S",
-				"Dokter I",
-				"Dokter H",
+				"Dokter L", 
 			],
 			axisBorder: {
 				show: false,
@@ -178,8 +166,7 @@
 				},
 			},
 		},
-		yaxis: {
-			reversed: true,
+		yaxis: { 
 			axisBorder: {
 				show: false,
 			},
@@ -2469,8 +2456,8 @@
 	var fd7 = {
 		chart: {
 			type: "bar",
-			stacked: true,
-			height: heightChart,
+			height: "350",
+			stacked: true, 
 			toolbar: {
 				show: false,
 			},
@@ -2489,8 +2476,7 @@
 			},
 		},
 		plotOptions: {
-			bar: {
-				horizontal: true,
+			bar: { 
 				columnWidth: "55%",
 				barHeight: "90%",
 				distribute: true,
@@ -2501,7 +2487,7 @@
 		},
 		legend: {
 			show: true,
-			position: "bottom",
+			position: "top",
 			horizontalAlign: "center",
 			labels: {
 				colors: legendColor,
@@ -2549,22 +2535,19 @@
 			{
 				name: "BPJS",
 				data: [
-					70, 65, 60, 55, 55, 55, 50, 50, 45, 45, 40, 40, 40, 40, 35, 35, 30,
-					30, 25, 25,
+					70, 65, 60, 55, 55, 55, 50, 50, 45, 45
 				],
 			},
 			{
 				name: "UMUM",
 				data: [
-					70, 65, 60, 55, 55, 55, 50, 50, 45, 45, 40, 40, 40, 40, 35, 35, 30,
-					30, 25, 25,
+					70, 65, 60, 55, 55, 55, 50, 50, 45, 45
 				],
 			},
 			{
 				name: "ASURANSI",
 				data: [
-					70, 65, 60, 55, 55, 55, 50, 50, 45, 45, 40, 40, 40, 40, 35, 35, 30,
-					30, 25, 25,
+					70, 65, 60, 55, 55, 55, 50, 50, 45, 45
 				],
 			},
 		],
@@ -2580,16 +2563,6 @@
 				"Dokter C",
 				"Dokter N",
 				"Dokter L",
-				"Dokter A",
-				"Dokter E",
-				"Dokter Q",
-				"Dokter G",
-				"Dokter D",
-				"Dokter F",
-				"Dokter B",
-				"Dokter S",
-				"Dokter I",
-				"Dokter H",
 			],
 			axisBorder: {
 				show: false,
@@ -2606,8 +2579,7 @@
 				},
 			},
 		},
-		yaxis: {
-			reveresed: true,
+		yaxis: { 
 			axisBorder: {
 				show: false,
 			},

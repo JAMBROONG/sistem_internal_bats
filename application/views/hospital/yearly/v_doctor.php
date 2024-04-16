@@ -148,8 +148,7 @@
         <div class="col-lg-6">
             <div class="card text-start h-100">
                 <div class="card-body">
-                    <h4 class="card-title">Jumlah Pasien Rawat Jalan dan Rawat Inap yang Ditangani oleh Setiap Dokter</h4>
-                    <p class="card-text mb-0">Menilai performa dokter berdasarkan jumlah pasien yang ditangani dari tahun 2018 hingga 2024.</p>
+                    <h4 class="card-title">Jumlah Pasien Rawat Jalan dan Rawat Inap yang Ditangani oleh Setiap Dokter</h4> 
                     <div id="fd1">
                     </div>
                 </div>
@@ -158,8 +157,7 @@
         <div class="col-lg-6">
             <div class="card text-start h-100">
                 <div class="card-body">
-                    <h4 class="card-title">Jumlah Pasien Rawat Jalan dan Rawat Inap yang Ditangani oleh Setiap Dokter Berdasarkan Jenis Pasien</h4>
-                    <p class="card-text mb-0">Menilai performa dokter berdasarkan jumlah pasien yang ditangani dari tahun 2018 hingga 2024 berdasarkan jenis pasien .</p>
+                    <h4 class="card-title">Jumlah Pasien Rawat Jalan dan Rawat Inap yang Ditangani oleh Setiap Dokter Berdasarkan Jenis Pasien</h4> 
                     <div id="fd7">
                     </div>
                 </div>
