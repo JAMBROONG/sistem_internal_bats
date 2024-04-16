@@ -700,27 +700,766 @@
   var chart = new ApexCharts(document.querySelector("#fu4"), fu4);
   chart.render();
 
-	 
-	var fu5 = {
-		series: [44, 55, 13, 43, 22],
-		chart: {
-		width: 380,
-		type: 'pie',
-	},
-	labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
-	responsive: [{
-		breakpoint: 480,
-		options: {
-			chart: {
-				width: 200
-			},
-			legend: {
-				position: 'bottom'
-			}
-		}
-	}]
-	};
+	  
 
-	var chart = new ApexCharts(document.querySelector("#fu5"), fu5);
-	chart.render();
+
+	var fu5 = {
+    series: [
+      {
+        name: 'KLS TRF 1',
+        data: [
+          44,
+          55,
+          57,
+          56,
+          61,
+          58,
+          63
+        ]
+      }, {
+        name: 'KLS TRF 2',
+        data: [
+          76,
+          85,
+          101,
+          98,
+          87,
+          105,
+          91
+        ]
+      }, {
+        name: 'KLS TRF 3',
+        data: [
+          35,
+          41,
+          36,
+          26,
+          45,
+          48,
+          52
+        ]
+      }, {
+        name: 'KLS TRF 4',
+        data: [
+          35,
+          41,
+          36,
+          26,
+          45,
+          48,
+          52
+        ]
+      }, {
+        name: 'KLS TRF 5',
+        data: [
+          35,
+          41,
+          36,
+          26,
+          45,
+          48,
+          52
+        ]
+      }, {
+        name: 'KLS TRF 6',
+        data: [
+          35,
+          41,
+          36,
+          26,
+          45,
+          48,
+          52
+        ]
+      }, {
+        name: 'KLS TRF 7',
+        data: [
+          35,
+          41,
+          36,
+          26,
+          45,
+          48,
+          52
+        ]
+      }
+    ],
+    chart: {
+      type: 'bar',
+      stacked: true,
+      height: 350,
+      toolbar: {
+        show: false
+      }
+    },
+
+    grid: {
+      xaxis: {
+        lines: {
+          show: false
+        }
+      },
+      yaxis: {
+        lines: {
+          show: false
+        }
+      }
+    },
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        columnWidth: '55%',
+        endingShape: 'rounded',
+        startingShape: 'rounded',
+        borderRadius: 4,
+        dataLabels: {
+          position: 'center', // top, center, bottom
+        }
+      }
+    },
+    legend: {
+      position: 'top',
+      horizontalAlign: 'left',
+      labels: {
+        colors: legendColor,
+        useSeriesColors: false
+      }
+    },
+    dataLabels: {
+      enabled: false,
+      show: false,
+      formatter: function (val) {
+        return val;
+      },
+      style: {
+        fontSize: '12px',
+        colors: ["#000"]
+      }
+    },
+    // colors: [   config.colors.primary, config.colors.success,
+    // config.colors.warning ],
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            height: 250
+          },
+
+          plotOptions: {
+            bar: {
+              horizontal: false,
+              columnWidth: '80%',
+              endingShape: 'rounded',
+              startingShape: 'rounded',
+              borderRadius: 4
+            }
+          },
+
+          dataLabels: {
+            enabled: false
+          }
+        }
+      }
+    ],
+    xaxis: {
+      categories: [
+        'Unit 1',
+        'Unit 2',
+        'Unit 3',
+        'Unit 4',
+        'Unit 5',
+        'Unit 6',
+        'Unit 7'
+      ],
+      axisBorder: {
+        show: false,
+        color: borderColor
+      },
+      axisTicks: {
+        show: false
+      },
+      labels: {
+        style: {
+          colors: legendColor,
+          fontSize: '13px',
+          fontFamily: 'Public Sans'
+        }
+      }
+    },
+    yaxis: {
+      axisBorder: {
+        show: false
+      },
+      labels: {
+        show: false,
+        style: {
+          colors: labelColor,
+          fontSize: '13px'
+        }
+      },
+      title: {
+        show: false
+      }
+    },
+    fill: {
+      opacity: 1
+    },
+
+    tooltip: {
+      y: {
+        formatter: function (val) {
+          return val + " pasien"
+        }
+      }
+    }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#fu5"), fu5);
+  chart.render();
+	var fu8 = {
+    series: [
+      {
+        name: 'Total Pasien',
+        data: [
+          50,
+          42,
+          43,
+          55,
+          57,
+          44,
+          45
+
+        ]
+      }
+    ],
+    chart: {
+      type: 'bar',
+      height: 350,
+      toolbar: {
+        show: false
+      }
+    },
+
+    grid: {
+      xaxis: {
+        lines: {
+          show: false
+        }
+      },
+      yaxis: {
+        lines: {
+          show: false
+        }
+      }
+    },
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        columnWidth: '55%',
+        endingShape: 'rounded',
+        startingShape: 'rounded',
+        borderRadius: 4,
+        dataLabels: {
+          position: 'top', // top, center, bottom
+        }
+      }
+    },
+    legend: {
+      show: true,
+      position: 'top',
+      horizontalAlign: 'start',
+      labels: {
+        colors: legendColor,
+        useSeriesColors: false
+      }
+    },
+    dataLabels: {
+      enabled: true,
+      formatter: function (val) {
+        return val + "M";
+      },
+      offsetY: -20,
+      style: {
+        fontSize: '12px',
+        colors: [legendColor]
+      }
+    },
+    colors: [
+      config.colors.primary
+    ],
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            height: 250
+          },
+
+          plotOptions: {
+            bar: {
+              horizontal: false,
+              columnWidth: '80%',
+              endingShape: 'rounded',
+              startingShape: 'rounded',
+              borderRadius: 4
+            }
+          },
+
+          dataLabels: {
+            enabled: false
+          }
+        }
+      }
+    ],
+    xaxis: {
+      categories: [
+        'unit 1',
+        'unit 2',
+        'unit 3',
+        'unit 4',
+        'unit 5',
+        'unit 6',
+        'unit 7'
+      ],
+      axisBorder: {
+        show: false,
+        color: borderColor
+      },
+      axisTicks: {
+        show: false
+      },
+      labels: {
+        style: {
+          colors: legendColor,
+          fontSize: '13px',
+          fontFamily: 'Public Sans'
+        }
+      }
+    },
+    yaxis: {
+      axisBorder: {
+        show: false
+      },
+      labels: {
+        show: false,
+        style: {
+          colors: labelColor,
+          fontSize: '13px'
+        }
+      },
+      title: {
+        show: false
+      }
+    },
+    fill: {
+      opacity: 1
+    },
+
+    tooltip: {
+      y: {
+        formatter: function (val) {
+          return val + " M"
+        }
+      }
+    }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#fu8"), fu8);
+  chart.render();
+
+
+
+
+	var fu9 = {
+    series: [
+      {
+        name: 'Unit 1',
+        data: [
+          44,
+          55,
+          57,
+          56,
+          61,
+          58,
+          63
+        ]
+      }, {
+        name: 'Unit 2',
+        data: [
+          76,
+          85,
+          101,
+          98,
+          87,
+          105,
+          91
+        ]
+      }, {
+        name: 'Unit 3',
+        data: [
+          35,
+          41,
+          36,
+          26,
+          45,
+          48,
+          52
+        ]
+      }, {
+        name: 'Unit 4',
+        data: [
+          35,
+          41,
+          36,
+          26,
+          45,
+          48,
+          52
+        ]
+      }, {
+        name: 'Unit 5',
+        data: [
+          35,
+          41,
+          36,
+          26,
+          45,
+          48,
+          52
+        ]
+      }, {
+        name: 'Unit 6',
+        data: [
+          35,
+          41,
+          36,
+          26,
+          45,
+          48,
+          52
+        ]
+      }, {
+        name: 'Unit 7',
+        data: [
+          35,
+          41,
+          36,
+          26,
+          45,
+          48,
+          52
+        ]
+      }
+    ],
+    chart: {
+      type: 'bar',
+      stacked: true,
+      height: 350,
+      toolbar: {
+        show: false
+      }
+    },
+
+    grid: {
+      xaxis: {
+        lines: {
+          show: false
+        }
+      },
+      yaxis: {
+        lines: {
+          show: false
+        }
+      }
+    },
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        columnWidth: '55%',
+        endingShape: 'rounded',
+        startingShape: 'rounded',
+        borderRadius: 4,
+        dataLabels: {
+          position: 'center', // top, center, bottom
+        }
+      }
+    },
+    legend: {
+      position: 'top',
+      horizontalAlign: 'left',
+      labels: {
+        colors: legendColor,
+        useSeriesColors: false
+      }
+    },
+    dataLabels: {
+      enabled: true,
+      show: true,
+      formatter: function (val) {
+        return val + "M";
+      },
+      style: {
+        fontSize: '12px',
+        // colors: ["#000"]
+      }
+    },
+    // colors: [   config.colors.primary, config.colors.success,
+    // config.colors.warning ],
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            height: 250
+          },
+
+          plotOptions: {
+            bar: {
+              horizontal: false,
+              columnWidth: '80%',
+              endingShape: 'rounded',
+              startingShape: 'rounded',
+              borderRadius: 4
+            }
+          },
+
+          dataLabels: {
+            enabled: false
+          }
+        }
+      }
+    ],
+    xaxis: {
+      categories: [
+        '2018',
+        '2019',
+        '2020',
+        '2021',
+        '2022',
+        '2023',
+        '2024'
+      ],
+      axisBorder: {
+        show: false,
+        color: borderColor
+      },
+      axisTicks: {
+        show: false
+      },
+      labels: {
+        style: {
+          colors: legendColor,
+          fontSize: '13px',
+          fontFamily: 'Public Sans'
+        }
+      }
+    },
+    yaxis: {
+      axisBorder: {
+        show: false
+      },
+      labels: {
+        show: false,
+        style: {
+          colors: labelColor,
+          fontSize: '13px'
+        }
+      },
+      title: {
+        show: false
+      }
+    },
+    fill: {
+      opacity: 1
+    },
+
+    tooltip: {
+      y: {
+        formatter: function (val) {
+          return val + " M"
+        }
+      }
+    }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#fu9"), fu9);
+  chart.render();
+
+
+	var fu10 = {
+    series: [
+      {
+        name: 'Bpjs',
+        data: [
+          50,
+          42,
+          43,
+          55,
+          57,
+          44,
+          45
+
+        ]
+      },{
+        name: 'Umum',
+        data: [
+          50,
+          42,
+          43,
+          55,
+          57,
+          44,
+          45
+
+        ]
+      },{
+        name: 'Umum',
+        data: [
+          50,
+          42,
+          43,
+          55,
+          57,
+          44,
+          45
+
+        ]
+      }
+    ],
+    chart: {
+      type: 'bar',
+      stacked: true,
+      height: 350,
+      toolbar: {
+        show: false
+      }
+    },
+
+    grid: {
+      xaxis: {
+        lines: {
+          show: false
+        }
+      },
+      yaxis: {
+        lines: {
+          show: false
+        }
+      }
+    },
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        columnWidth: '55%',
+        endingShape: 'rounded',
+        startingShape: 'rounded',
+        borderRadius: 4,
+        dataLabels: {
+          position: 'center', // top, center, bottom
+        }
+      }
+    },
+    legend: {
+      show: true,
+      position: 'top',
+      horizontalAlign: 'start',
+      labels: {
+        colors: legendColor,
+        useSeriesColors: false
+      }
+    },
+    dataLabels: {
+      enabled: true,
+      formatter: function (val) {
+        return val + "M";
+      }, 
+      style: {
+        fontSize: '12px',
+        colors: [legendColor]
+      }
+    },
+    colors: [
+      config.colors.primary,config.colors.success,config.colors.warning
+    ],
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          chart: {
+            height: 250
+          },
+
+          plotOptions: {
+            bar: {
+              horizontal: false,
+              columnWidth: '80%',
+              endingShape: 'rounded',
+              startingShape: 'rounded',
+              borderRadius: 4
+            }
+          },
+
+          dataLabels: {
+            enabled: false
+          }
+        }
+      }
+    ],
+    xaxis: {
+      categories: [
+        'unit 1',
+        'unit 2',
+        'unit 3',
+        'unit 4',
+        'unit 5',
+        'unit 6',
+        'unit 7'
+      ],
+      axisBorder: {
+        show: false,
+        color: borderColor
+      },
+      axisTicks: {
+        show: false
+      },
+      labels: {
+        style: {
+          colors: legendColor,
+          fontSize: '13px',
+          fontFamily: 'Public Sans'
+        }
+      }
+    },
+    yaxis: {
+      axisBorder: {
+        show: false
+      },
+      labels: {
+        show: false,
+        style: {
+          colors: labelColor,
+          fontSize: '13px'
+        }
+      },
+      title: {
+        show: false
+      }
+    },
+    fill: {
+      opacity: 1
+    },
+
+    tooltip: {
+      y: {
+        formatter: function (val) {
+          return val + " M"
+        }
+      }
+    }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#fu10"), fu10);
+  chart.render();
+
 })();
