@@ -1375,8 +1375,7 @@
         return val + "M";
       }, 
       style: {
-        fontSize: '12px',
-        colors: [legendColor]
+        fontSize: '12px', 
       }
     },
     colors: [

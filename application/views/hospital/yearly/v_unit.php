@@ -1,14 +1,14 @@
 <!-- Content -->
 <?php include 'templates/header.php'; ?>
 <div class="container-xxl flex-grow-1 container-p-y">
-    <!-- <div class="card mb-4">
+    <div class="card mb-4">
         <div class="card-body p-3">
             <h4 class="display-5 m-0 text-center">ANALISA UNIT</h4>
         </div>
-    </div> -->
+    </div>
 
     <div class="row mb-4 g-4">
-        <!-- <div class="col-lg-6 mb-3 mb-lg-0">
+        <div class="col-lg-6 mb-3 mb-lg-0">
             <div class="card h-100">
                 <div class="card-body">
                     <h5 class="card-title">Menghitung jumlah pasien yang dilayani oleh masing-masing unit</h5>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
     <div class="card mb-4">
         <div class="card-body p-3">
