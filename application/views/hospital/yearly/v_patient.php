@@ -204,8 +204,7 @@
         <div class="col-lg-6">
             <div class="card text-start h-100">
                 <div class="card-body">
-                    <h4 class="card-title">Jumlah Pasien Rawat Jalan Berdasarkan Jenis Pasien dan Tahun</h4>
-                    <p class="card-text">Pembandingan jumlah pasien rawat jalan BPJS, umum, dan asuransi dari tahun 2018 hingga 2024.</p>
+                    <h4 class="card-title">Jumlah Pasien Rawat Jalan Berdasarkan Jenis Pasien dan Tahun</h4> 
                     <div id="fp7">
                     </div>
                 </div>
@@ -214,8 +213,7 @@
         <div class="col-lg-6">
             <div class="card text-start h-100">
                 <div class="card-body">
-                    <h4 class="card-title">Jumlah Pasien Rawat Inap Berdasarkan Jenis Pasien dan Tahun</h4>
-                    <p class="card-text">Pembandingan jumlah pasien rawat inap BPJS, umum, dan asuransi dari tahun 2018 hingga 2024.</p>
+                    <h4 class="card-title">Jumlah Pasien Rawat Inap Berdasarkan Jenis Pasien dan Tahun</h4> 
                     <div id="fp6">
                     </div>
                 </div>

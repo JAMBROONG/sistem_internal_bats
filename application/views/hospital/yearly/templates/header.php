@@ -55,7 +55,7 @@
                 <div class="container-xxl">
                     <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4">
                         <a href="index.html" class="app-brand-link gap-2">
-                            <span class="app-brand-text demo menu-text fw-bold">Dashboard 2018 - 2024</span>
+                            <span class="app-brand-text demo menu-text fw-bold">2018 - 2024</span>
                         </a>
                         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
                             <i class="ti ti-x ti-sm align-middle"></i>
@@ -66,11 +66,10 @@
                         <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
                             <i class="ti ti-menu-2 ti-sm"></i>
                         </a>
-                    </div>
-
+                    </div> 
                     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-                        <ul class="navbar-nav flex-row align-items-center ms-auto">
-
+                        <ul class="navbar-nav flex-row align-items-center ms-auto gap-2">
+					
                             <!-- Style Switcher -->
                             <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">

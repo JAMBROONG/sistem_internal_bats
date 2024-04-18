@@ -54,7 +54,7 @@
             <nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
                 <div class="container-xxl">
                     <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4">
-                        <a href="index.html" class="app-brand-link gap-2"> 
+                        <a href="index.html" class="app-brand-link gap-2">
                             <span class="app-brand-text demo menu-text fw-bold">HealthView Analytics</span>
                         </a>
 
@@ -70,8 +70,8 @@
                     </div>
 
                     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-                        <ul class="navbar-nav flex-row align-items-center ms-auto"> 
-
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+                            
                             <!-- Style Switcher -->
                             <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
@@ -96,8 +96,7 @@
                                 </ul>
                             </li>
                             <!-- / Style Switcher-->
- 
- 
+
                             <!-- User -->
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
@@ -115,8 +114,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-medium d-block"><?=$user['name']?></span>
-                                                    <small class="text-muted"><?=$user['typeBusiness']?></small>
+                                                    <span class="fw-medium d-block"><?= $user['name'] ?></span>
+                                                    <small class="text-muted"><?= $user['typeBusiness'] ?></small>
                                                 </div>
                                             </div>
                                         </a>
@@ -129,7 +128,7 @@
                                             <i class="ti ti-user-check me-2 ti-sm"></i>
                                             <span class="align-middle">My Profile</span>
                                         </a>
-                                    </li> 
+                                    </li>
                                     <li>
                                         <div class="dropdown-divider"></div>
                                     </li>
@@ -162,8 +161,8 @@
                     <!-- Menu -->
                     <aside id="layout-menu" class="layout-menu-horizontal menu-horizontal menu bg-menu-theme flex-grow-0">
                         <div class="container-xxl d-flex h-100">
-                            <ul class="menu-inner justify-content-center"> 
-                                <li class="menu-item active">
+                            <ul class="menu-inner justify-content-center">
+                                <li class="menu-item">
                                     <a href="<?= base_url('hospital-app') ?>" class="menu-link">
                                         <i class="menu-icon tf-icons ti ti-old"></i>
                                         <div>Pasien</div>
@@ -186,7 +185,7 @@
                                         <i class="menu-icon tf-icons ti ti-pill"></i>
                                         <div>Obat</div>
                                     </a>
-                                </li> 
+                                </li>
                             </ul>
                         </div>
                     </aside>
