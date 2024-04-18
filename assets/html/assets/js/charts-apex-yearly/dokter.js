@@ -27,8 +27,8 @@
     borderColor = config.colors.borderColor;
   }
 
-  heightChart = 350;
-  heightMinChart = 250;
+  heightChart = 300;
+  heightMinChart = 200;
 
   // Color constant
   const chartColors = {
@@ -53,13 +53,19 @@
   var fd1 = {
     chart: {
       type: "bar",
-      height: 250,
+      height: heightMinChart,
       toolbar: {
         show: false
       }
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false
@@ -103,33 +109,33 @@
       }
     },
     colors: [config.colors.primary],
-	responsive: [
-		{
-		  breakpoint: 480,
-		  options: {
-			plotOptions: {
-			  bar: {
-				columnWidth: "85%",
-				endingShape: "rounded",
-				startingShape: "rounded",
-				borderRadius: 4
-			  }
-			},
-			chart: {
-			  
-		height: heightMinChart,
-			},
-			xaxis:{
-			  labels:{
-				  rotate: -90
-			  }
-			},
-			dataLabels: {
-			  enabled: false
-			}
-		  }
-		}
-	  ],
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          plotOptions: {
+            bar: {
+              columnWidth: "85%",
+              endingShape: "rounded",
+              startingShape: "rounded",
+              borderRadius: 4
+            }
+          },
+          chart: {
+
+            height: heightMinChart
+          },
+          xaxis: {
+            labels: {
+              rotate: -90
+            }
+          },
+          dataLabels: {
+            enabled: false
+          }
+        }
+      }
+    ],
     series: [
       {
         name: "Pasien",
@@ -168,7 +174,7 @@
         show: false
       },
       labels: {
-		rotate: -90,
+        rotate: -90,
         style: {
           colors: legendColor,
           fontSize: "10px",
@@ -176,7 +182,7 @@
         }
       }
     },
-    yaxis: { 
+    yaxis: {
       show: false
     },
     fill: {
@@ -198,13 +204,19 @@
   var fd2 = {
     chart: {
       type: "bar",
-      height: 350,
+      height: heightChart,
       toolbar: {
         show: false
       }
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false
@@ -249,32 +261,31 @@
     },
     colors: [config.colors.warning],
     responsive: [
-		{
-		  breakpoint: 480,
-		  options: {
-			plotOptions: {
-			  bar: {
-				columnWidth: "85%",
-				endingShape: "rounded",
-				startingShape: "rounded",
-				borderRadius: 4
-			  }
-			},
-			chart: {
-			  
-		height: heightMinChart,
-			},
-			xaxis:{
-			  labels:{
-				  rotate: -90
-			  }
-			},
-			dataLabels: {
-			  enabled: false
-			}
-		  }
-		}
-	  ],
+      {
+        breakpoint: 480,
+        options: {
+          plotOptions: {
+            bar: {
+              columnWidth: "85%",
+              endingShape: "rounded",
+              startingShape: "rounded",
+              borderRadius: 4
+            }
+          },
+          chart: { 
+            height: heightMinChart
+          },
+          xaxis: {
+            labels: {
+              rotate: -90
+            }
+          },
+          dataLabels: {
+            enabled: false
+          }
+        }
+      }
+    ],
     series: [
       {
         name: "Pasien",
@@ -321,7 +332,7 @@
       }
     },
     yaxis: {
-      show:false
+      show: false
     },
     fill: {
       opacity: 1
@@ -342,13 +353,19 @@
   var fd3 = {
     chart: {
       type: "bar",
-      height: 350,
+      height: heightChart,
       toolbar: {
         show: false
       }
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false
@@ -393,32 +410,32 @@
     },
     colors: [config.colors.primary],
     responsive: [
-		{
-		  breakpoint: 480,
-		  options: {
-			plotOptions: {
-			  bar: {
-				columnWidth: "85%",
-				endingShape: "rounded",
-				startingShape: "rounded",
-				borderRadius: 4
-			  }
-			},
-			chart: {
-			  
-		height: heightMinChart,
-			},
-			xaxis:{
-			  labels:{
-				  rotate: -90
-			  }
-			},
-			dataLabels: {
-			  enabled: false
-			}
-		  }
-		}
-	  ],
+      {
+        breakpoint: 480,
+        options: {
+          plotOptions: {
+            bar: {
+              columnWidth: "85%",
+              endingShape: "rounded",
+              startingShape: "rounded",
+              borderRadius: 4
+            }
+          },
+          chart: {
+
+            height: heightMinChart
+          },
+          xaxis: {
+            labels: {
+              rotate: -90
+            }
+          },
+          dataLabels: {
+            enabled: false
+          }
+        }
+      }
+    ],
     series: [
       {
         name: "Pasien",
@@ -465,8 +482,8 @@
       }
     },
     yaxis: {
-      
-        show: false 
+
+      show: false
     },
     fill: {
       opacity: 1
@@ -494,6 +511,12 @@
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false
@@ -542,8 +565,8 @@
         breakpoint: 480,
         options: {
           chart: {
-			
-      height: heightMinChart,
+
+            height: heightMinChart
           },
 
           plotOptions: {
@@ -607,19 +630,7 @@
       }
     },
     yaxis: {
-      axisBorder: {
-        show: false
-      },
-      labels: {
-        show: true,
-        style: {
-          colors: labelColor,
-          fontSize: "10px"
-        }
-      },
-      title: {
-        show: false
-      }
+       show:false
     },
     fill: {
       opacity: 1
@@ -639,19 +650,19 @@
 
   var fd15 = {
     chart: {
-      type: "bar", 
+      type: "bar",
       toolbar: {
         show: false
       }
     },
 
     grid: {
-			padding: {
+      padding: {
         top: 0,
         right: 0,
         bottom: 0,
         left: 0
-    },
+      },
       xaxis: {
         lines: {
           show: false
@@ -760,7 +771,7 @@
       }
     },
     yaxis: {
-     show:false
+      show: false
     },
     fill: {
       opacity: 1
@@ -788,12 +799,12 @@
     },
 
     grid: {
-			padding: {
+      padding: {
         top: 0,
         right: 0,
         bottom: 0,
         left: 0
-    },
+      },
       xaxis: {
         lines: {
           show: false
@@ -837,7 +848,7 @@
         colors: [legendColor]
       }
     },
-    colors: [ "#6b5eef"],
+    colors: ["#6b5eef"],
     responsive: [
       {
         breakpoint: 480,
@@ -902,7 +913,7 @@
       }
     },
     yaxis: {
-      show:false
+      show: false
     },
     fill: {
       opacity: 1
@@ -930,12 +941,12 @@
     },
 
     grid: {
-			padding: {
+      padding: {
         top: 0,
         right: 0,
         bottom: 0,
         left: 0
-    },
+      },
       xaxis: {
         lines: {
           show: false
@@ -979,7 +990,7 @@
         colors: [legendColor]
       }
     },
-    colors: [ "#ada6f6"],
+    colors: ["#ada6f6"],
     responsive: [
       {
         breakpoint: 480,
@@ -1044,7 +1055,7 @@
       }
     },
     yaxis: {
-      show:false
+      show: false
     },
     fill: {
       opacity: 1
@@ -1101,13 +1112,19 @@
     ],
     chart: {
       type: "bar",
-      height: 350,
+      height: heightChart,
       toolbar: {
         show: false
       }
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false
@@ -1159,7 +1176,7 @@
         breakpoint: 480,
         options: {
           chart: {
-            height: 250
+            height: heightMinChart
           },
 
           plotOptions: {
@@ -1273,13 +1290,19 @@
     ],
     chart: {
       type: "bar",
-      height: 350,
+      height: heightChart,
       toolbar: {
         show: false
       }
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false
@@ -1331,7 +1354,7 @@
         breakpoint: 480,
         options: {
           chart: {
-            height: 250
+            height: heightMinChart
           },
 
           plotOptions: {
@@ -1406,35 +1429,6 @@
   var chart = new ApexCharts(document.querySelector("#fd19"), fd19);
   chart.render();
 
-  // var fd20 = { 	series: [ 		{ 			name: "UMUM", 			data: [44, 55, 57, 56, 61,
-  // 58, 63], 		}, 		{ 			name: "BPJS", 			data: [76, 85, 101, 98, 87, 105, 91],
-  // 		}, 		{ 			name: "ASURANSI", 			data: [35, 41, 36, 26, 45, 48, 52], 		}, 	],
-  // 	chart: { 		type: "bar", 		height: 350, 		toolbar: { 			show: false, 		}, 	},
-  // 	grid: { 		xaxis: { 			lines: { 				show: false, 			}, 		}, 		yaxis: {
-  // 			lines: { 				show: false, 			}, 		}, 	}, 	plotOptions: { 		bar: {
-  // 			horizontal: false, 			columnWidth: "70%", 			endingShape: "rounded",
-  // 			startingShape: "rounded", 			borderRadius: 4, 			dataLabels: {
-  // 				position: "top", // top, center, bottom 			}, 		}, 	}, 	legend: { 		show:
-  // true, 		position: "top", 		horizontalAlign: "start", 		labels: { 			colors:
-  // legendColor, 			useSeriesColors: false, 		}, 	}, 	dataLabels: { 		enabled:
-  // true, 		formatter: function (val) { 			return val; 		}, 		offsetY: -20,
-  // 		style: { 			fontSize: "12px", 			colors: [legendColor], 		}, 	}, 	colors: [
-  // 		config.colors.primary, 		config.colors.success, 		config.colors.warning,
-  // 	], 	responsive: [ 		{ 			breakpoint: 480, 			options: { 				chart: {
-  // 					height: 250, 				}, 				plotOptions: { 					bar: { 						horizontal:
-  // false, 						columnWidth: "80%", 						endingShape: "rounded",
-  // 						startingShape: "rounded", 						borderRadius: 4, 					}, 				},
-  // 				dataLabels: { 					enabled: false, 				}, 			}, 		}, 	], 	xaxis: {
-  // 		categories: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
-  // 		axisBorder: { 			show: false, 			color: borderColor, 		}, 		axisTicks: {
-  // 			show: false, 		}, 		labels: { 			style: { 				colors: legendColor,
-  // 				fontSize: "10px", 				fontFamily: "Public Sans", 			}, 		}, 	}, 	yaxis: {
-  // 		axisBorder: { 			show: false, 		}, 		labels: { 			show: false, 			style: {
-  // 				colors: labelColor, 				fontSize: "10px", 			}, 		}, 		title: { 			show:
-  // false, 		}, 	}, 	fill: { 		opacity: 1, 	}, 	tooltip: { 		y: { 			formatter:
-  // function (val) { 				return val + " pasien"; 			}, 		}, 	}, }; var chart =
-  // new ApexCharts(document.querySelector("#fd20"), fd20); chart.render();
-
   var fd20 = {
     series: [
       {
@@ -1474,13 +1468,19 @@
     ],
     chart: {
       type: "bar",
-      height: 350,
+      height: heightChart,
       toolbar: {
         show: false
       }
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false
@@ -1532,7 +1532,7 @@
         breakpoint: 480,
         options: {
           chart: {
-            height: 250
+            height: heightMinChart
           },
 
           plotOptions: {
@@ -1692,6 +1692,12 @@
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false
@@ -1801,19 +1807,7 @@
       }
     },
     yaxis: {
-      axisBorder: {
-        show: false
-      },
-      labels: {
-        show: true,
-        style: {
-          colors: labelColor,
-          fontSize: "10px"
-        }
-      },
-      title: {
-        show: false
-      }
+       show:false
     },
     fill: {
       opacity: 1
@@ -1916,6 +1910,12 @@
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false
@@ -2151,6 +2151,12 @@
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false
@@ -2260,19 +2266,7 @@
       }
     },
     yaxis: {
-      axisBorder: {
-        show: false
-      },
-      labels: {
-        show: true,
-        style: {
-          colors: labelColor,
-          fontSize: "10px"
-        }
-      },
-      title: {
-        show: false
-      }
+       show:false
     },
     fill: {
       opacity: 1
@@ -2293,13 +2287,19 @@
   var fd5 = {
     chart: {
       type: "bar",
-      height: heightChart,
+      height: heightMinChart,
       toolbar: {
         show: false
       }
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false
@@ -2348,8 +2348,8 @@
         breakpoint: 480,
         options: {
           chart: {
-			
-      height: heightMinChart,
+
+            height: heightMinChart
           },
 
           plotOptions: {
@@ -2413,19 +2413,7 @@
       }
     },
     yaxis: {
-      axisBorder: {
-        show: false
-      },
-      labels: {
-        show: true,
-        style: {
-          colors: labelColor,
-          fontSize: "10px"
-        }
-      },
-      title: {
-        show: false
-      }
+       show:false
     },
     fill: {
       opacity: 1
@@ -2446,13 +2434,19 @@
   var fd6 = {
     chart: {
       type: "bar",
-      height: heightChart,
+      height: heightMinChart,
       toolbar: {
         show: false
       }
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false
@@ -2501,8 +2495,8 @@
         breakpoint: 480,
         options: {
           chart: {
-			
-      height: heightMinChart,
+
+            height: heightMinChart
           },
 
           plotOptions: {
@@ -2566,19 +2560,7 @@
       }
     },
     yaxis: {
-      axisBorder: {
-        show: false
-      },
-      labels: {
-        show: true,
-        style: {
-          colors: labelColor,
-          fontSize: "10px"
-        }
-      },
-      title: {
-        show: false
-      }
+       show:false
     },
     fill: {
       opacity: 1
@@ -2599,7 +2581,7 @@
   var fd7 = {
     chart: {
       type: "bar",
-      height: 250,
+      height: heightMinChart,
       stacked: true,
       toolbar: {
         show: false
@@ -2607,6 +2589,12 @@
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false
@@ -2664,18 +2652,18 @@
             }
           },
           chart: {
-			
-      height: heightMinChart,
+
+            height: heightMinChart
           },
-		  xaxis:{
-			labels:{
-				rotate: -90
-			}
-		  },
+          xaxis: {
+            labels: {
+              rotate: -90
+            }
+          },
           dataLabels: {
-			style: {
-			fontSize: "8px", 
-		  }
+            style: {
+              fontSize: "8px"
+            }
           }
         }
       }
@@ -2754,7 +2742,7 @@
       }
     },
     yaxis: {
-       show: false
+      show: false
     },
     fill: {
       opacity: 1
@@ -2782,6 +2770,12 @@
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false
@@ -2826,33 +2820,33 @@
     colors: [
       "#ff8612", "#ffab5b", "#ffd0a4"
     ],
-	responsive: [
-		{
-		  breakpoint: 480,
-		  options: {
-			plotOptions: {
-			  bar: {
-				columnWidth: "85%",
-				endingShape: "rounded",
-				startingShape: "rounded",
-				borderRadius: 4
-			  }
-			},
-			chart: {
-			  
-		height: heightMinChart,
-			},
-			xaxis:{
-			  labels:{
-				  rotate: -90
-			  }
-			},
-			dataLabels: {
-			  enabled: false
-			}
-		  }
-		}
-	  ],
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          plotOptions: {
+            bar: {
+              columnWidth: "85%",
+              endingShape: "rounded",
+              startingShape: "rounded",
+              borderRadius: 4
+            }
+          },
+          chart: {
+
+            height: heightMinChart
+          },
+          xaxis: {
+            labels: {
+              rotate: -90
+            }
+          },
+          dataLabels: {
+            enabled: false
+          }
+        }
+      }
+    ],
     series: [
       {
         name: "BPJS",
@@ -2926,7 +2920,8 @@
         }
       }
     },
-    yaxis: { show:false
+    yaxis: {
+      show: false
     },
     fill: {
       opacity: 1
@@ -2954,6 +2949,12 @@
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false
@@ -3012,8 +3013,8 @@
           },
 
           chart: {
-			
-      height: heightMinChart,
+
+            height: heightMinChart
           },
 
           dataLabels: {
@@ -3117,7 +3118,7 @@
   var fd10 = {
     chart: {
       type: "bar",
-      height: 350,
+      height: heightChart,
       stacked: true,
       toolbar: {
         show: true,
@@ -3299,6 +3300,12 @@
     },
 
     grid: {
+      padding: {
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
       xaxis: {
         lines: {
           show: false

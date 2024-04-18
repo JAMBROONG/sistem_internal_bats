@@ -1,140 +1,137 @@
 <!-- Content -->
 <?php include 'templates/header.php'; ?>
 <div class="container-xxl flex-grow-1 container-p-y">
-    <!-- <h6 class=" m-0">ANALISA PENANGANAN DOKTER</h6>
+    <h6 class=" m-0">ANALISA PENANGANAN DOKTER</h6>
     <hr>
     <div class="row g-4">
         <div class="col-lg-12">
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="card text-start h-100">
-                        <div class="card-body">
-                            <h6>Jumlah Pasien yang ditangani oleh dokter per Tahun dan Dokter</h6>
-
-                            <div id="fd10" class="mb-5"></div>
-                            <div class="d-flex align-items-center justify-content-center">
+                        <div class="card-body  justify-content-between flex-column d-flex">
+                            <div class="">
+                                <h6>Jumlah Pasien yang ditangani oleh dokter per Tahun dan Dokter</h6>
                                 <a href="" class="btn btn-primary mb-2" type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionOne" aria-expanded="false" aria-controls="accordionOne">Lihat Tabel</a>
-
                             </div>
                             <div id="accordionOne" class="accordion-collapse collapse my-3" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <div class="table-responsive text-nowrap">
-                                        <table class="table table-bordered">
+                                        <table class="table table-bordered w-100">
                                             <thead>
                                                 <tr>
-                                                    <th class=" align-middle text-center bg-body" rowspan="2">Nama Dokter</th>
-                                                    <th class="text-center bg-body" colspan="7">Tahun</th>
+                                                    <th class="p-2  align-middle text-center bg-body" rowspan="2">Nama Dokter</th>
+                                                    <th class="p-2 text-center bg-body" colspan="7">Tahun</th>
                                                 </tr>
                                                 <tr>
-                                                    <th class="text-center bg-body">2018</th>
-                                                    <th class="text-center bg-body">2019</th>
-                                                    <th class="text-center bg-body">2020</th>
-                                                    <th class="text-center bg-body">2021</th>
-                                                    <th class="text-center bg-body">2022</th>
-                                                    <th class="text-center bg-body">2023</th>
-                                                    <th class="text-center bg-body">2024</th>
+                                                    <th class="p-2 text-center bg-body">2018</th>
+                                                    <th class="p-2 text-center bg-body">2019</th>
+                                                    <th class="p-2 text-center bg-body">2020</th>
+                                                    <th class="p-2 text-center bg-body">2021</th>
+                                                    <th class="p-2 text-center bg-body">2022</th>
+                                                    <th class="p-2 text-center bg-body">2023</th>
+                                                    <th class="p-2 text-center bg-body">2024</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>Dokter A</td>
-                                                    <td class="text-center"><small>200</small></td>
-                                                    <td class="text-center"><small>210</small></td>
-                                                    <td class="text-center"><small>220</small></td>
-                                                    <td class="text-center"><small>230</small></td>
-                                                    <td class="text-center"><small>240</small></td>
-                                                    <td class="text-center"><small>250</small></td>
-                                                    <td class="text-center"><small>260</small></td>
+                                                    <td class="p-2 text-center">200</td>
+                                                    <td class="p-2 text-center">210</td>
+                                                    <td class="p-2 text-center">220</td>
+                                                    <td class="p-2 text-center">230</td>
+                                                    <td class="p-2 text-center">240</td>
+                                                    <td class="p-2 text-center">250</td>
+                                                    <td class="p-2 text-center">260</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Dokter B</td>
-                                                    <td class="text-center"><small>270</small></td>
-                                                    <td class="text-center"><small>280</small></td>
-                                                    <td class="text-center"><small>290</small></td>
-                                                    <td class="text-center"><small>300</small></td>
-                                                    <td class="text-center"><small>310</small></td>
-                                                    <td class="text-center"><small>320</small></td>
-                                                    <td class="text-center"><small>330</small></td>
+                                                    <td class="p-2 text-center">270</td>
+                                                    <td class="p-2 text-center">280</td>
+                                                    <td class="p-2 text-center">290</td>
+                                                    <td class="p-2 text-center">300</td>
+                                                    <td class="p-2 text-center">310</td>
+                                                    <td class="p-2 text-center">320</td>
+                                                    <td class="p-2 text-center">330</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Dokter C</td>
-                                                    <td class="text-center"><small>340</small></td>
-                                                    <td class="text-center"><small>350</small></td>
-                                                    <td class="text-center"><small>360</small></td>
-                                                    <td class="text-center"><small>370</small></td>
-                                                    <td class="text-center"><small>380</small></td>
-                                                    <td class="text-center"><small>390</small></td>
-                                                    <td class="text-center"><small>400</small></td>
+                                                    <td class="p-2 text-center">340</td>
+                                                    <td class="p-2 text-center">350</td>
+                                                    <td class="p-2 text-center">360</td>
+                                                    <td class="p-2 text-center">370</td>
+                                                    <td class="p-2 text-center">380</td>
+                                                    <td class="p-2 text-center">390</td>
+                                                    <td class="p-2 text-center">400</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Dokter D</td>
-                                                    <td class="text-center"><small>410</small></td>
-                                                    <td class="text-center"><small>420</small></td>
-                                                    <td class="text-center"><small>430</small></td>
-                                                    <td class="text-center"><small>440</small></td>
-                                                    <td class="text-center"><small>450</small></td>
-                                                    <td class="text-center"><small>460</small></td>
-                                                    <td class="text-center"><small>470</small></td>
+                                                    <td class="p-2 text-center">410</td>
+                                                    <td class="p-2 text-center">420</td>
+                                                    <td class="p-2 text-center">430</td>
+                                                    <td class="p-2 text-center">440</td>
+                                                    <td class="p-2 text-center">450</td>
+                                                    <td class="p-2 text-center">460</td>
+                                                    <td class="p-2 text-center">470</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Dokter E</td>
-                                                    <td class="text-center"><small>480</small></td>
-                                                    <td class="text-center"><small>490</small></td>
-                                                    <td class="text-center"><small>500</small></td>
-                                                    <td class="text-center"><small>510</small></td>
-                                                    <td class="text-center"><small>520</small></td>
-                                                    <td class="text-center"><small>530</small></td>
-                                                    <td class="text-center"><small>540</small></td>
+                                                    <td class="p-2 text-center">480</td>
+                                                    <td class="p-2 text-center">490</td>
+                                                    <td class="p-2 text-center">500</td>
+                                                    <td class="p-2 text-center">510</td>
+                                                    <td class="p-2 text-center">520</td>
+                                                    <td class="p-2 text-center">530</td>
+                                                    <td class="p-2 text-center">540</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Dokter F</td>
-                                                    <td class="text-center"><small>550</small></td>
-                                                    <td class="text-center"><small>560</small></td>
-                                                    <td class="text-center"><small>570</small></td>
-                                                    <td class="text-center"><small>580</small></td>
-                                                    <td class="text-center"><small>590</small></td>
-                                                    <td class="text-center"><small>600</small></td>
-                                                    <td class="text-center"><small>610</small></td>
+                                                    <td class="p-2 text-center">550</td>
+                                                    <td class="p-2 text-center">560</td>
+                                                    <td class="p-2 text-center">570</td>
+                                                    <td class="p-2 text-center">580</td>
+                                                    <td class="p-2 text-center">590</td>
+                                                    <td class="p-2 text-center">600</td>
+                                                    <td class="p-2 text-center">610</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Dokter G</td>
-                                                    <td class="text-center"><small>620</small></td>
-                                                    <td class="text-center"><small>630</small></td>
-                                                    <td class="text-center"><small>640</small></td>
-                                                    <td class="text-center"><small>650</small></td>
-                                                    <td class="text-center"><small>660</small></td>
-                                                    <td class="text-center"><small>670</small></td>
-                                                    <td class="text-center"><small>680</small></td>
+                                                    <td class="p-2 text-center">620</td>
+                                                    <td class="p-2 text-center">630</td>
+                                                    <td class="p-2 text-center">640</td>
+                                                    <td class="p-2 text-center">650</td>
+                                                    <td class="p-2 text-center">660</td>
+                                                    <td class="p-2 text-center">670</td>
+                                                    <td class="p-2 text-center">680</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Dokter H</td>
-                                                    <td class="text-center"><small>690</small></td>
-                                                    <td class="text-center"><small>700</small></td>
-                                                    <td class="text-center"><small>710</small></td>
-                                                    <td class="text-center"><small>720</small></td>
-                                                    <td class="text-center"><small>730</small></td>
-                                                    <td class="text-center"><small>740</small></td>
-                                                    <td class="text-center"><small>750</small></td>
+                                                    <td class="p-2 text-center">690</td>
+                                                    <td class="p-2 text-center">700</td>
+                                                    <td class="p-2 text-center">710</td>
+                                                    <td class="p-2 text-center">720</td>
+                                                    <td class="p-2 text-center">730</td>
+                                                    <td class="p-2 text-center">740</td>
+                                                    <td class="p-2 text-center">750</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Dokter I</td>
-                                                    <td class="text-center"><small>760</small></td>
-                                                    <td class="text-center"><small>770</small></td>
-                                                    <td class="text-center"><small>780</small></td>
-                                                    <td class="text-center"><small>790</small></td>
-                                                    <td class="text-center"><small>800</small></td>
-                                                    <td class="text-center"><small>810</small></td>
-                                                    <td class="text-center"><small>820</small></td>
+                                                    <td class="p-2 text-center">760</td>
+                                                    <td class="p-2 text-center">770</td>
+                                                    <td class="p-2 text-center">780</td>
+                                                    <td class="p-2 text-center">790</td>
+                                                    <td class="p-2 text-center">800</td>
+                                                    <td class="p-2 text-center">810</td>
+                                                    <td class="p-2 text-center">820</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Dokter J</td>
-                                                    <td class="text-center"><small>830</small></td>
-                                                    <td class="text-center"><small>840</small></td>
-                                                    <td class="text-center"><small>850</small></td>
-                                                    <td class="text-center"><small>860</small></td>
-                                                    <td class="text-center"><small>870</small></td>
-                                                    <td class="text-center"><small>880</small></td>
-                                                    <td class="text-center"><small>890</small></td>
+                                                    <td class="p-2 text-center">830</td>
+                                                    <td class="p-2 text-center">840</td>
+                                                    <td class="p-2 text-center">850</td>
+                                                    <td class="p-2 text-center">860</td>
+                                                    <td class="p-2 text-center">870</td>
+                                                    <td class="p-2 text-center">880</td>
+                                                    <td class="p-2 text-center">890</td>
                                                 </tr>
                                             </tbody>
 
@@ -142,13 +139,15 @@
                                     </div>
                                 </div>
                             </div>
+                            <div id="fd10" class="mb-5"></div>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="card text-start">
                         <div class="card-body">
-                            <h6 class="">Jumlah Pasien Rawat Jalan dan Rawat Inap yang Ditangani oleh Setiap Dokter</h6>
+                            <h6 class="mb-0">Jumlah Pasien Rawat Jalan dan Rawat Inap yang Ditangani oleh Setiap Dokter</h6>
                             <div id="fd1">
                             </div>
                             <hr>
@@ -184,7 +183,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <h6 class="mt-4">ANALISA PENDAPATAN DOKTER</h6>
     <hr>
     <div class="row mb-4 g-4">
@@ -205,7 +204,7 @@
                         <div class="card-body">
                             <h6>Pendapatan dari Pelayanan Dokter untuk Rawat Jalan Pertahun</h6>
                             <div id="fd16">
-                            </div> 
+                            </div>
                             <hr>
                             <h6>Pendapatan dari Pelayanan Dokter untuk Rawat Inap Pertahun</h6>
                             <div id="fd17">
@@ -244,32 +243,32 @@
             </div>
         </div>
         <div class="col-lg-12">
-            <div class="card text-start h-100">
-                <div class="card-body">
-                    <h6>Pendapatan dari Pelayanan Dokter untuk Rawat Jalan dan Rawat Inap</h6>
-                    <div id="fd4">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card text-start h-100">
+                        <div class="card-body  justify-content-between flex-column d-flex">
+                            <div class="">
+                                <h6>Pendapatan dari Pelayanan Dokter untuk Rawat Jalan dan Rawat Inap</h6>
+                            </div> 
+                            <div id="fd4",></div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card text-start">
+                        <div class="card-body">
+                            <h6 class="mb-0">Pendapatan dari Pelayanan Dokter untuk Rawat Jalan</h6>
+                            <div id="fd5">
+                            </div>
+                            <hr>
+                            <h6 class="mb-0">Pendapatan dari Pelayanan Dokter untuk Rawat Inap</h6>
+                            <div id="fd6">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="card text-start h-100">
-                <div class="card-body">
-                    <h6>Pendapatan dari Pelayanan Dokter untuk Rawat Jalan </h6>
-                    <div id="fd5">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="card text-start h-100">
-                <div class="card-body">
-                    <h6>Pendapatan dari Pelayanan Dokter untuk Rawat Inap</h6>
-                    <div id="fd6">
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div> 
         <div class="col-lg-12">
             <div class="card text-start h-100">
                 <div class="card-body">
