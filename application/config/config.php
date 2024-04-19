@@ -23,7 +23,8 @@ date_default_timezone_set("Asia/Jakarta");
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/sistem_internal_bats'; 
+// $config['base_url'] = 'http://localhost/sistem_internal_bats'; 
+$config['base_url'] = 'http://localhost:8080/sistem_internal_bats'; 
 
 /*
 |--------------------------------------------------------------------------

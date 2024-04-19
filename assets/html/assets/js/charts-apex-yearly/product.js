@@ -27,7 +27,7 @@
 	var fp1 = {
 		series: [
 			{
-				name: "UMUM",
+				name: "Pendapatan",
 				data: [44, 55, 57, 56, 61, 58, 63],
 			},
 		],
@@ -141,7 +141,7 @@
 		tooltip: {
 			y: {
 				formatter: function (val) {
-					return val + " pasien";
+					return val + " Produk";
 				},
 			},
 		},
