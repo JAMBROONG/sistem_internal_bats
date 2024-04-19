@@ -503,8 +503,7 @@
 
   var fd4 = {
     chart: {
-      type: "bar",
-      height: heightChart,
+      type: "bar", 
       toolbar: {
         show: false
       }
@@ -559,7 +558,7 @@
         colors: [legendColor]
       }
     },
-    colors: [config.colors.primary],
+    colors: [config.colors.warning],
     responsive: [
       {
         breakpoint: 480,
@@ -1160,7 +1159,7 @@
     dataLabels: {
       enabled: true,
       formatter: function (val) {
-        return val;
+        return val + "M";
       },
       offsetY: -20,
       style: {
@@ -1338,7 +1337,7 @@
     dataLabels: {
       enabled: true,
       formatter: function (val) {
-        return val;
+        return val + "M";
       },
       offsetY: -20,
       style: {
@@ -1516,7 +1515,7 @@
     dataLabels: {
       enabled: true,
       formatter: function (val) {
-        return val;
+        return val + "M";
       },
       offsetY: -20,
       style: {
@@ -1622,16 +1621,6 @@
           42,
           30,
           78,
-          60,
-          47,
-          35,
-          80,
-          28,
-          33,
-          70,
-          93,
-          25,
-          72
         ]
       }, {
         name: "BPJS",
@@ -1646,16 +1635,6 @@
           55,
           40,
           63,
-          50,
-          57,
-          42,
-          85,
-          40,
-          25,
-          20,
-          89,
-          35,
-          68
         ]
       }, {
         name: "ASURANSI",
@@ -1670,22 +1649,12 @@
           60,
           50,
           70,
-          45,
-          52,
-          38,
-          90,
-          45,
-          28,
-          40,
-          97,
-          30,
-          80
         ]
       }
     ],
     chart: {
       type: "bar",
-      height: "500%",
+      height: heightChart,
       toolbar: {
         show: false
       }
@@ -1710,8 +1679,7 @@
       }
     },
     plotOptions: {
-      bar: {
-        horizontal: true,
+      bar: { 
         columnWidth: "70%",
         endingShape: "rounded",
         startingShape: "rounded",
@@ -1733,9 +1701,9 @@
     dataLabels: {
       enabled: true,
       formatter: function (val) {
-        return val;
+        return val + "M";
       },
-      offsetX: 20,
+      offsetY: -20,
       style: {
         fontSize: "12px",
         colors: [legendColor]
@@ -1749,7 +1717,7 @@
         breakpoint: 480,
         options: {
           chart: {
-            height: "150%"
+            height: heightMinChart
           },
 
           plotOptions: {
@@ -1780,16 +1748,6 @@
         "Dokter C",
         "Dokter N",
         "Dokter L",
-        "Dokter A",
-        "Dokter E",
-        "Dokter Q",
-        "Dokter G",
-        "Dokter D",
-        "Dokter F",
-        "Dokter B",
-        "Dokter S",
-        "Dokter I",
-        "Dokter H"
       ],
       axisBorder: {
         show: false,
@@ -1840,16 +1798,6 @@
           42,
           30,
           78,
-          60,
-          47,
-          35,
-          80,
-          28,
-          33,
-          70,
-          93,
-          25,
-          72
         ]
       }, {
         name: "BPJS",
@@ -1864,16 +1812,6 @@
           55,
           40,
           63,
-          50,
-          57,
-          42,
-          85,
-          40,
-          25,
-          20,
-          89,
-          35,
-          68
         ]
       }, {
         name: "ASURANSI",
@@ -1888,22 +1826,12 @@
           60,
           50,
           70,
-          45,
-          52,
-          38,
-          90,
-          45,
-          28,
-          40,
-          97,
-          30,
-          80
         ]
       }
     ],
     chart: {
       type: "bar",
-      height: "95%",
+      height: heightChart,
       toolbar: {
         show: false
       }
@@ -1928,8 +1856,7 @@
       }
     },
     plotOptions: {
-      bar: {
-        horizontal: true,
+      bar: { 
         columnWidth: "70%",
         endingShape: "rounded",
         startingShape: "rounded",
@@ -1951,9 +1878,9 @@
     dataLabels: {
       enabled: true,
       formatter: function (val) {
-        return val;
+        return val + "M";
       },
-      offsetX: 20,
+      offsetY: -20,
       style: {
         fontSize: "12px",
         colors: [legendColor]
@@ -1967,7 +1894,7 @@
         breakpoint: 480,
         options: {
           chart: {
-            height: "150%"
+            height: heightMinChart
           },
 
           plotOptions: {
@@ -1977,16 +1904,6 @@
               endingShape: "rounded",
               startingShape: "rounded",
               borderRadius: 4
-            }
-          },
-
-          yaxis: {
-            reversed: false,
-            labels: {
-              style: {
-                colors: legendColor,
-                fontSize: "10px"
-              }
             }
           },
 
@@ -2008,16 +1925,6 @@
         "Dokter C",
         "Dokter N",
         "Dokter L",
-        "Dokter A",
-        "Dokter E",
-        "Dokter Q",
-        "Dokter G",
-        "Dokter D",
-        "Dokter F",
-        "Dokter B",
-        "Dokter S",
-        "Dokter I",
-        "Dokter H"
       ],
       axisBorder: {
         show: false,
@@ -2035,20 +1942,7 @@
       }
     },
     yaxis: {
-      reversed: true,
-      axisBorder: {
-        show: false
-      },
-      labels: {
-        show: true,
-        style: {
-          colors: labelColor,
-          fontSize: "10px"
-        }
-      },
-      title: {
-        show: false
-      }
+       show:false
     },
     fill: {
       opacity: 1
@@ -2081,16 +1975,6 @@
           42,
           30,
           78,
-          60,
-          47,
-          35,
-          80,
-          28,
-          33,
-          70,
-          93,
-          25,
-          72
         ]
       }, {
         name: "BPJS",
@@ -2105,16 +1989,6 @@
           55,
           40,
           63,
-          50,
-          57,
-          42,
-          85,
-          40,
-          25,
-          20,
-          89,
-          35,
-          68
         ]
       }, {
         name: "ASURANSI",
@@ -2129,22 +2003,12 @@
           60,
           50,
           70,
-          45,
-          52,
-          38,
-          90,
-          45,
-          28,
-          40,
-          97,
-          30,
-          80
         ]
       }
     ],
     chart: {
       type: "bar",
-      height: "95%",
+      height: heightChart,
       toolbar: {
         show: false
       }
@@ -2169,8 +2033,7 @@
       }
     },
     plotOptions: {
-      bar: {
-        horizontal: true,
+      bar: { 
         columnWidth: "70%",
         endingShape: "rounded",
         startingShape: "rounded",
@@ -2192,9 +2055,9 @@
     dataLabels: {
       enabled: true,
       formatter: function (val) {
-        return val;
+        return val + "M";
       },
-      offsetX: 20,
+      offsetY: -20,
       style: {
         fontSize: "12px",
         colors: [legendColor]
@@ -2208,7 +2071,7 @@
         breakpoint: 480,
         options: {
           chart: {
-            height: "150%"
+            height: heightMinChart
           },
 
           plotOptions: {
@@ -2239,16 +2102,6 @@
         "Dokter C",
         "Dokter N",
         "Dokter L",
-        "Dokter A",
-        "Dokter E",
-        "Dokter Q",
-        "Dokter G",
-        "Dokter D",
-        "Dokter F",
-        "Dokter B",
-        "Dokter S",
-        "Dokter I",
-        "Dokter H"
       ],
       axisBorder: {
         show: false,
@@ -2342,7 +2195,7 @@
         colors: [legendColor]
       }
     },
-    colors: [config.colors.warning],
+    colors: ["#ffab5b"],
     responsive: [
       {
         breakpoint: 480,
@@ -2489,7 +2342,7 @@
         colors: [legendColor]
       }
     },
-    colors: "#ffab5b",
+    colors:  "#ffd0a4",
     responsive: [
       {
         breakpoint: 480,
@@ -3117,20 +2970,11 @@
 
   var fd10 = {
     chart: {
-      type: "bar",
-      height: heightChart,
+      type: "bar", 
       stacked: true,
       toolbar: {
-        show: true,
-        tools: {
-          download: false,
-          selection: true,
-          zoom: false,
-          zoomin: false,
-          zoomout: false,
-          pan: false,
-          reset: false
-        }
+        show: false,
+         
       }
     },
     plotOptions: {
