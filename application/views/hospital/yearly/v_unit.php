@@ -1,17 +1,15 @@
 <!-- Content -->
 <?php include 'templates/header.php'; ?>
 <div class="container-xxl flex-grow-1 container-p-y">
-    <div class="card mb-4">
-        <div class="card-body p-3">
-            <h4 class="display-5 m-0 text-center">ANALISA UNIT</h4>
-        </div>
-    </div>
+	
+<h6 class=" m-0">ANALISA UNIT</h6>
+    <hr> 
 
     <div class="row mb-4 g-4">
         <div class="col-lg-6 mb-3 mb-lg-0">
             <div class="card h-100">
                 <div class="card-body">
-                    <h5 class="card-title">Menghitung jumlah pasien yang dilayani oleh masing-masing unit</h5>
+                    <h6 class="card-title">Menghitung jumlah pasien yang dilayani oleh masing-masing unit</h6>
                     <div id="fu1" class="mb-4"></div>
                 </div>
             </div>
@@ -20,7 +18,7 @@
         <div class="col-lg-6">
             <div class="card text-start h-100">
                 <div class="card-body">
-                    <h5 class="card-title">Menghitung jumlah pasien yang dilayani oleh masing-masing unit per tahun</h5>
+                    <h6 class="card-title">Menghitung jumlah pasien yang dilayani oleh masing-masing unit per tahun</h6>
                     <div id="fu2">
                     </div>
                 </div>
@@ -29,7 +27,7 @@
         <div class="col-lg-6">
             <div class="card text-start h-100">
                 <div class="card-body">
-                    <h5 class="card-title">Jumlah pasien yang dilayani di setiap unit berdasarkan jenis penjamin (umum, BPJS, asuransi)</h5>
+                    <h6 class="card-title">Jumlah pasien yang dilayani di setiap unit berdasarkan jenis penjamin (umum, BPJS, asuransi)</h6>
                     <div id="fu3">
                     </div>
                 </div>
@@ -38,7 +36,7 @@
         <div class="col-lg-6">
             <div class="card text-start h-100">
                 <div class="card-body">
-                    <h5 class="card-title">Jumlah pasien yang dilayani di setiap unit berdasarkan jenis penjamin (umum, BPJS, asuransi) per tahun</h5>
+                    <h6 class="card-title">Jumlah pasien yang dilayani di setiap unit berdasarkan jenis penjamin (umum, BPJS, asuransi) per tahun</h6>
                     <div id="fu4">
                     </div>
                 </div>
@@ -47,7 +45,7 @@
         <div class="col-12">
             <div class="card text-start h-100">
                 <div class="card-body">
-                    <h5 class="card-title">Menampilkan distribusi pendapatan atau jumlah pasien berdasarkan kelas tarif dalam setiap unit.</h5>
+                    <h6 class="card-title">Menampilkan distribusi pendapatan atau jumlah pasien berdasarkan kelas tarif dalam setiap unit.</h6>
                     <div class="row">
                         <div class="col">
                             <div class="d-flex justify-content-center" id="fu5">
@@ -60,7 +58,7 @@
         <div class="col-12">
             <div class="card text-start h-100">
                 <div class="card-body">
-                    <h5 class="card-title">Menentukan produk atau obat apa yang paling banyak menghasilkan pendapatan dalam setiap unit.</h5> 
+                    <h6 class="card-title">Menentukan produk atau obat apa yang paling banyak menghasilkan pendapatan dalam setiap unit.</h6> 
                             <div class="table-responsive text-nowrap">
                                 <table class="table table-bordered">
                                     <thead>
@@ -197,7 +195,7 @@
         <div class="col-lg-6">
             <div class="card text-start h-100">
                 <div class="card-body">
-                    <h5 class="card-title">Menentukan jumlah pendapatan per unit</h5>
+                    <h6 class="card-title">Menentukan jumlah pendapatan per unit</h6>
                     <div id="fu8">
                     </div>
                 </div>
@@ -206,7 +204,7 @@
         <div class="col-lg-6">
             <div class="card text-start h-100">
                 <div class="card-body">
-                    <h5 class="card-title">Menentukan jumlah pendapatan per unit per tahun</h5>
+                    <h6 class="card-title">Menentukan jumlah pendapatan per unit per tahun</h6>
                     <div id="fu9">
                     </div>
                 </div>
@@ -215,7 +213,7 @@
         <div class="col-lg-12">
             <div class="card text-start h-100">
                 <div class="card-body">
-                    <h5 class="card-title">Menentukan jumlah pendapatan per unit berdasarkan jenis pasien</h5>
+                    <h6 class="card-title">Menentukan jumlah pendapatan per unit berdasarkan jenis pasien</h6>
                     <div id="fu10">
                     </div>
                 </div>

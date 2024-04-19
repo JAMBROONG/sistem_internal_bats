@@ -104,7 +104,7 @@
       },
       offsetY: -20,
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: [legendColor]
       }
     },
@@ -255,7 +255,7 @@
       },
       offsetY: -20,
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: [legendColor]
       }
     },
@@ -404,7 +404,7 @@
       },
       offsetY: -20,
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: [legendColor]
       }
     },
@@ -554,7 +554,7 @@
       },
       offsetY: -20,
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: [legendColor]
       }
     },
@@ -701,7 +701,7 @@
       },
       offsetY: -20,
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: [legendColor]
       }
     },
@@ -843,7 +843,7 @@
       },
       offsetY: -20,
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: [legendColor]
       }
     },
@@ -985,7 +985,7 @@
       },
       offsetY: -20,
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: [legendColor]
       }
     },
@@ -1163,7 +1163,7 @@
       },
       offsetY: -20,
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: [legendColor]
       }
     },
@@ -1341,7 +1341,7 @@
       },
       offsetY: -20,
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: [legendColor]
       }
     },
@@ -1519,7 +1519,7 @@
       },
       offsetY: -20,
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: [legendColor]
       }
     },
@@ -1705,7 +1705,7 @@
       },
       offsetY: -20,
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: [legendColor]
       }
     },
@@ -1721,8 +1721,7 @@
           },
 
           plotOptions: {
-            bar: {
-              horizontal: true,
+            bar: { 
               columnWidth: "80%",
               endingShape: "rounded",
               startingShape: "rounded",
@@ -1882,7 +1881,7 @@
       },
       offsetY: -20,
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: [legendColor]
       }
     },
@@ -1899,7 +1898,6 @@
 
           plotOptions: {
             bar: {
-              horizontal: true,
               columnWidth: "80%",
               endingShape: "rounded",
               startingShape: "rounded",
@@ -2059,7 +2057,7 @@
       },
       offsetY: -20,
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: [legendColor]
       }
     },
@@ -2076,7 +2074,6 @@
 
           plotOptions: {
             bar: {
-              horizontal: true,
               columnWidth: "80%",
               endingShape: "rounded",
               startingShape: "rounded",
@@ -2191,7 +2188,7 @@
       },
       offsetY: -20,
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: [legendColor]
       }
     },
@@ -2338,7 +2335,7 @@
       },
       offsetY: -20,
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: [legendColor]
       }
     },
@@ -2484,7 +2481,7 @@
         return val + "JT";
       },
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: ["#fff"]
       }
     },
@@ -2666,7 +2663,7 @@
         return val;
       },
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: ["#fff"]
       }
     },
@@ -2845,7 +2842,7 @@
         return val;
       },
       style: {
-        fontSize: "12px",
+        fontSize: "10px",
         colors: ["#fff"]
       }
     },
